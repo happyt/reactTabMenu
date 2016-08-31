@@ -153,28 +153,28 @@ var Content = React.createClass({
             <div className="content">
                 {this.props.currentTab === 1 ?
                 <div className="One">
-                    <img src="images/image1.png" />
+                    <img  width="32" src="images/image1.png" />
                     <Lister />
                 </div>
                 :null}
 
                 {this.props.currentTab === 2 ?
                 <div className="Two">
-                    <img src="images/image2.png" />
+                    <img width="32" src="images/image2.png" />
                     <Fire />
                 </div>
                 :null}
 
                 {this.props.currentTab === 3 ?
                 <div className="Three">
-                    <img src="images/image3.png" />
+                    <img width="32" src="images/image3.png" />
                     <ToDoApp />
                 </div>
                 :null}
             
                 {this.props.currentTab === 4 ?
                 <div className="Four">
-                    <img src="images/image4.png" />
+                    <img width="32" src="images/image4.png" />
                 </div>
                 :null}
             </div>

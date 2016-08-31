@@ -1,26 +1,42 @@
 import React from 'react'
 
+var ListItems = React.createClass({
+  render: function() {
+    var _this = this;
+    var createItem = function(item, index) {
+      return (
+        <li key={ index }>
+          { item.text }
+        </li>
+      );
+    };
+    if (Array.isArray(this.props.items) && this.props.items.length > 0) {
+//        console.log("Length...", this.props.items.length);
+        return <ul>{ this.props.items.map(createItem) }</ul>;
+    } else {
+        return <div>No entries</div>
+    }
+  }
+});
+
 var Fire = React.createClass({
     getInitialState: function() {
         return {
-
-            items : [
-                { 'id': 1, 'name': 'One', 'url': '/one' },
-                { 'id': 2, 'name': 'Two', 'url': '/two' },
-                { 'id': 3, 'name': 'Three', 'url': '/three' },
-                { 'id': 4, 'name': 'FourZ', 'url': '/four' }
-            ]
+            items : []
         };
     },
 
   componentWillMount: function() {
     this.firebaseRef  = firebase.database().ref("table");
-    console.log("Mounting...", firebase);
-    this.firebaseRef.on("value", function(dataSnapshot) {
-        this.items.push(dataSnapshot.val());
-        console.log("Value...", dataSnapshot.val());
+    this.firebaseRef.on('value', function(dataSnapshot) {
+        var items = [];
+        dataSnapshot.forEach(function(childSnapshot) {
+            var item = childSnapshot.val();
+            item['.key'] = childSnapshot.key;
+            items.push(item);
+        }.bind(this));
         this.setState({
-             items: this.items
+             items: items
          });
      }.bind(this));
   },
@@ -29,11 +45,11 @@ var Fire = React.createClass({
     this.firebaseRef.off();
   },
 
-  render() {        
+  render: function() {        
         return(
             <div>
-                <div>Table:</div>
-                 { this.state.items.map(item => { return <div key={item.id}>{item.name}</div>}) } 
+                <div>Firebase table:</div>
+                <ListItems items={ this.state.items } /> 
            </div>  
         );
     }
