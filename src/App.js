@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Lister from '../src/Lister.js';
 
 class App extends React.Component {
     constructor() {
         super();
         this.state = {
-            txt : "anyway",
+            txt : "starter",
             red : 0,
             green : 0,
             blue : 0,
@@ -55,7 +56,7 @@ class App extends React.Component {
                 <Slider ref="blue" update={this.update} />
                 {this.state.blue}
                 <br />
-                <Widget txt={this.state.txt} update={this.update} />
+                <InputBox txt={this.state.txt} update={this.update} />
                 <br />
                 <Button>I <Heart/> choose this</Button>    
             </div>
@@ -69,7 +70,7 @@ class Button extends React.Component {
     }
 }
 
-const Heart = () => <span className="glyphicon glyphicon-heart"></span>
+const Heart = () => <span className="fa fa-camera-retro"></span>
 
 class Slider extends React.Component {
     render() {
@@ -84,7 +85,7 @@ class Slider extends React.Component {
     }
 }
 
-const Widget = (props) => {
+const InputBox = (props) => {
     return (
         <div>
         <input type="text"
@@ -150,7 +151,7 @@ var Content = React.createClass({
             <div className="content">
                 {this.props.currentTab === 1 ?
                 <div className="One">
-                    <img src="images/image1.png" />
+                    <Lister />
                 </div>
                 :null}
 
