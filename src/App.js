@@ -5,6 +5,7 @@ import Fire from '../src/Fire.js';
 import ToDoApp from '../src/ToDoApp.js';
 import Sliders from '../src/Sliders.js';
 import Actions from '../src/Actions.js';
+import ToDoDemo from '../src/ToDoDemo.js';
 
 class App extends React.Component {
     constructor() {
@@ -126,7 +127,7 @@ var Content = React.createClass({
                 {this.props.currentTab === 5 ?
                 <div className="Five">
                     <img width="32" src="images/image5.jpg" />
-                    <Actions />
+                    <ToDoDemo />
                 </div>
                 :null}
 
