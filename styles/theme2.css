@@ -9,8 +9,9 @@
         .pure-button-warning,
         .pure-button-secondary {
             color: black;
-            border-radius: 8px;
+            border-radius: 4px;
             text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+            border: solid #444444 1px;
         }
         .pure-button-success {
             background: rgb(152,251,152); /* this is a pale green */

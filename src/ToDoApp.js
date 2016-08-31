@@ -6,7 +6,7 @@ var ToDoList = React.createClass({
     var createItem = function(item, index) {
       return (
         <li key={ index }>
-          { item.text }
+          { item.text }, {item.trip}
           <span onClick={ _this.props.removeItem.bind(null, item['.key']) }
                 style={{ color: 'red', marginLeft: '10px', cursor: 'pointer' }}>
             X
@@ -71,9 +71,12 @@ var ToDoApp = React.createClass({
     return (
       <div>
         <ToDoList items={ this.state.items } removeItem={ this.removeItem } />
-        <form onSubmit={ this.handleSubmit }>
-          <input onChange={ this.onChange } value={ this.state.text } />
-          <button>{ 'Add #' + (this.state.items.length + 1) }</button>
+        <form className="pure-form-aligned" onSubmit={ this.handleSubmit }>
+        <div className="pure-control-group">
+            <label for="name">Next item</label>
+            <input onChange={ this.onChange } value={ this.state.text } />
+            <button className="pure-button pure-button-success">{ 'Add # ' + (this.state.items.length + 1) }</button>
+          </div>
         </form>
       </div>
     );
