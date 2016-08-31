@@ -3,7 +3,7 @@ import React from 'react';
 export default class Lister extends React.Component {
     constructor() {
         super();
-        this.state = { items: [{key:"1",name:"alan"}, {key:"2", name:"bob"}] };
+        this.state = { items: [{id:"1",name:"alan"}, {id:"2", name:"bob"}] };
     }
     
     componentDidMount() {
@@ -19,7 +19,7 @@ export default class Lister extends React.Component {
         return(
             <div>
                 <div>Items:</div>
-                { this.state.items.map(item => { return <div key={item.key}>{item.name}, {item.username}</div>}) }          
+                { this.state.items.map(item => { return <div key={item.id}>{item.name}, {item.username}</div>}) }          
             </div>  
         );
     }

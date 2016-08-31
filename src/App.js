@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Lister from '../src/Lister.js';
+import Fire from '../src/Fire.js';
+import ToDoApp from '../src/ToDoApp.js';
 
 class App extends React.Component {
     constructor() {
@@ -151,6 +153,7 @@ var Content = React.createClass({
             <div className="content">
                 {this.props.currentTab === 1 ?
                 <div className="One">
+                    <img src="images/image1.png" />
                     <Lister />
                 </div>
                 :null}
@@ -158,12 +161,14 @@ var Content = React.createClass({
                 {this.props.currentTab === 2 ?
                 <div className="Two">
                     <img src="images/image2.png" />
+                    <Fire />
                 </div>
                 :null}
 
                 {this.props.currentTab === 3 ?
                 <div className="Three">
                     <img src="images/image3.png" />
+                    <ToDoApp />
                 </div>
                 :null}
             
