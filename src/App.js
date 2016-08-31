@@ -3,105 +3,50 @@ import ReactDOM from 'react-dom';
 import Lister from '../src/Lister.js';
 import Fire from '../src/Fire.js';
 import ToDoApp from '../src/ToDoApp.js';
+import Sliders from '../src/Sliders.js';
+import Actions from '../src/Actions.js';
 
 class App extends React.Component {
     constructor() {
         super();
         this.state = {
-            txt : "starter",
-            red : 0,
-            green : 0,
-            blue : 0,
             tabList: tabList,
             currentTab : 1
         };
-        this.update = this.update.bind(this);
         this.changeTab = this.changeTab.bind(this);
-    }
-
-    update (e) {
-        this.setState(
-            {
-                red : ReactDOM.findDOMNode(this.refs.red.refs.inp).value,
-                green : ReactDOM.findDOMNode(this.refs.green.refs.inp).value,
-                blue : ReactDOM.findDOMNode(this.refs.blue.refs.inp).value,
-                txt : e.target.value
-            }
-        );
     }
 
     changeTab(tab) {
         this.setState({ 
-                currentTab: tab.id 
+            currentTab: tab.id 
         });
     }
 
     render() {
         return (
             <div>
-            <div>
-                <Tabs
-                    currentTab={this.state.currentTab}
-                    tabList={this.state.tabList}
-                    changeTab={this.changeTab}
-                />
-                <Content
-                    currentTab={this.state.currentTab}
-                 />
-            </div>
-                <Slider ref="red" update={this.update} />
-                {this.state.red}
-                <br />
-                <Slider ref="green" update={this.update} />
-                {this.state.green}
-                <br />
-                <Slider ref="blue" update={this.update} />
-                {this.state.blue}
-                <br />
-                <InputBox txt={this.state.txt} update={this.update} />
-                <br />
-                <Button>I <Heart/> choose this</Button>    
+                <div>
+                    <Tabs
+                        currentTab={this.state.currentTab}
+                        tabList={this.state.tabList}
+                        changeTab={this.changeTab}
+                    />
+                    <Content
+                        currentTab={this.state.currentTab}
+                    />
+                </div>  
             </div>
         )
     }
 }
 
-class Button extends React.Component {
-    render() {
-        return <button>{this.props.children}</button>
-    }
-}
-
-const Heart = () => <span className="fa fa-camera-retro"></span>
-
-class Slider extends React.Component {
-    render() {
-        return (
-            <div>
-            <input ref="inp" type="range"
-                min="0"
-                max="255"
-                onChange={this.props.update} />
-            </div>
-        );
-    }
-}
-
-const InputBox = (props) => {
-    return (
-        <div>
-        <input type="text"
-                onChange = {props.update} />
-        <h1>{props.txt}</h1>
-        </div>
-    )    
-}
-
 var tabList = [
-    { 'id': 1, 'name': 'One', 'url': '/one' },
-    { 'id': 2, 'name': 'Two', 'url': '/two' },
-    { 'id': 3, 'name': 'Three', 'url': '/three' },
-    { 'id': 4, 'name': 'FourZ', 'url': '/four' }
+    { 'id': 1, 'name': 'Users', 'url': '/one' },
+    { 'id': 2, 'name': 'Fire', 'url': '/two' },
+    { 'id': 3, 'name': 'ToDo', 'url': '/three' },
+    { 'id': 4, 'name': 'FourZ', 'url': '/four' },
+    { 'id': 5, 'name': 'Five', 'url': '/five' },
+    { 'id': 6, 'name': 'Sliders', 'url': '/six' }
 ];
 
 var Tab = React.createClass({
@@ -153,7 +98,7 @@ var Content = React.createClass({
             <div className="content">
                 {this.props.currentTab === 1 ?
                 <div className="One">
-                    <img  width="32" src="images/image1.png" />
+                    <img  width="40" src="images/image1.png" />
                     <Lister />
                 </div>
                 :null}
@@ -167,7 +112,7 @@ var Content = React.createClass({
 
                 {this.props.currentTab === 3 ?
                 <div className="Three">
-                    <img width="32" src="images/image3.png" />
+                    <img width="24" src="images/image3.png" />
                     <ToDoApp />
                 </div>
                 :null}
@@ -175,6 +120,20 @@ var Content = React.createClass({
                 {this.props.currentTab === 4 ?
                 <div className="Four">
                     <img width="32" src="images/image4.png" />
+                </div>
+                :null}
+
+                {this.props.currentTab === 5 ?
+                <div className="Five">
+                    <img width="32" src="images/image5.jpg" />
+                    <Actions />
+                </div>
+                :null}
+
+                 {this.props.currentTab === 6 ?
+                <div className="Six">
+                    <img width="48" src="images/image6.jpg" />
+                    <Sliders />
                 </div>
                 :null}
             </div>

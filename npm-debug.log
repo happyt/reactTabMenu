@@ -1,0 +1,993 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'immutable' ]
+2 info using npm@3.8.6
+3 info using node@v5.12.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData immutable
+8 silly fetchNamedPackageData immutable
+9 silly mapToRegistry name immutable
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'immutable',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   name: 'immutable',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/immutable
+14 verbose request uri https://registry.npmjs.org/immutable
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 5:26:13 PM
+17 verbose request id 9572811ded379f8c
+18 verbose etag "ASDD0JMOD66WPC0QE6CAJR2QW"
+19 http request GET https://registry.npmjs.org/immutable
+20 http 304 https://registry.npmjs.org/immutable
+21 verbose headers { date: 'Wed, 31 Aug 2016 16:26:14 GMT',
+21 verbose headers   via: '1.1 varnish',
+21 verbose headers   'cache-control': 'max-age=300',
+21 verbose headers   etag: '"ASDD0JMOD66WPC0QE6CAJR2QW"',
+21 verbose headers   age: '87',
+21 verbose headers   connection: 'keep-alive',
+21 verbose headers   'x-served-by': 'cache-lhr6345-LHR',
+21 verbose headers   'x-cache': 'HIT',
+21 verbose headers   'x-cache-hits': '2',
+21 verbose headers   'x-timer': 'S1472660774.045343,VS0,VE0',
+21 verbose headers   vary: 'Accept-Encoding' }
+22 silly get cb [ 304,
+22 silly get   { date: 'Wed, 31 Aug 2016 16:26:14 GMT',
+22 silly get     via: '1.1 varnish',
+22 silly get     'cache-control': 'max-age=300',
+22 silly get     etag: '"ASDD0JMOD66WPC0QE6CAJR2QW"',
+22 silly get     age: '87',
+22 silly get     connection: 'keep-alive',
+22 silly get     'x-served-by': 'cache-lhr6345-LHR',
+22 silly get     'x-cache': 'HIT',
+22 silly get     'x-cache-hits': '2',
+22 silly get     'x-timer': 'S1472660774.045343,VS0,VE0',
+22 silly get     vary: 'Accept-Encoding' } ]
+23 verbose etag https://registry.npmjs.org/immutable from cache
+24 verbose get saving immutable to C:\Users\mortoni\AppData\Roaming\npm-cache\registry.npmjs.org\immutable\.cache.json
+25 verbose correctMkdir C:\Users\mortoni\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+26 silly install normalizeTree
+27 silly loadCurrentTree Finishing
+28 silly loadIdealTree Starting
+29 silly install loadIdealTree
+30 silly cloneCurrentTree Starting
+31 silly install cloneCurrentTreeToIdealTree
+32 silly cloneCurrentTree Finishing
+33 silly loadShrinkwrap Starting
+34 silly install loadShrinkwrap
+35 silly loadShrinkwrap Finishing
+36 silly loadAllDepsIntoIdealTree Starting
+37 silly install loadAllDepsIntoIdealTree
+38 silly resolveWithNewModule immutable@3.8.1 checking installable status
+39 silly cache add args [ 'immutable', null ]
+40 verbose cache add spec immutable
+41 silly cache add parsed spec Result {
+41 silly cache add   raw: 'immutable',
+41 silly cache add   scope: null,
+41 silly cache add   name: 'immutable',
+41 silly cache add   rawSpec: '',
+41 silly cache add   spec: 'latest',
+41 silly cache add   type: 'tag' }
+42 silly addNamed immutable@latest
+43 verbose addNamed "latest" is being treated as a dist-tag for immutable
+44 info addNameTag [ 'immutable', 'latest' ]
+45 silly mapToRegistry name immutable
+46 silly mapToRegistry using default registry
+47 silly mapToRegistry registry https://registry.npmjs.org/
+48 silly mapToRegistry data Result {
+48 silly mapToRegistry   raw: 'immutable',
+48 silly mapToRegistry   scope: null,
+48 silly mapToRegistry   name: 'immutable',
+48 silly mapToRegistry   rawSpec: '',
+48 silly mapToRegistry   spec: 'latest',
+48 silly mapToRegistry   type: 'tag' }
+49 silly mapToRegistry uri https://registry.npmjs.org/immutable
+50 verbose addNameTag registry:https://registry.npmjs.org/immutable not in flight; fetching
+51 verbose get https://registry.npmjs.org/immutable not expired, no request
+52 silly addNameTag next cb for immutable with tag latest
+53 silly addNamed immutable@3.8.1
+54 verbose addNamed "3.8.1" is a plain semver version for immutable
+55 silly cache afterAdd immutable@3.8.1
+56 verbose afterAdd C:\Users\mortoni\AppData\Roaming\npm-cache\immutable\3.8.1\package\package.json not in flight; writing
+57 verbose correctMkdir C:\Users\mortoni\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+58 verbose afterAdd C:\Users\mortoni\AppData\Roaming\npm-cache\immutable\3.8.1\package\package.json written
+59 silly fetchNamedPackageData fsevents
+60 silly mapToRegistry name fsevents
+61 silly mapToRegistry using default registry
+62 silly mapToRegistry registry https://registry.npmjs.org/
+63 silly mapToRegistry data Result {
+63 silly mapToRegistry   raw: 'fsevents',
+63 silly mapToRegistry   scope: null,
+63 silly mapToRegistry   name: 'fsevents',
+63 silly mapToRegistry   rawSpec: '',
+63 silly mapToRegistry   spec: 'latest',
+63 silly mapToRegistry   type: 'tag' }
+64 silly mapToRegistry uri https://registry.npmjs.org/fsevents
+65 verbose request uri https://registry.npmjs.org/fsevents
+66 verbose request no auth needed
+67 info attempt registry request try #1 at 5:26:14 PM
+68 verbose etag "1IUUBBNAFSLRNOMEHDGNJ1LTJ"
+69 http request GET https://registry.npmjs.org/fsevents
+70 http 304 https://registry.npmjs.org/fsevents
+71 verbose headers { date: 'Wed, 31 Aug 2016 16:26:14 GMT',
+71 verbose headers   via: '1.1 varnish',
+71 verbose headers   'cache-control': 'max-age=300',
+71 verbose headers   etag: '"1IUUBBNAFSLRNOMEHDGNJ1LTJ"',
+71 verbose headers   age: '192',
+71 verbose headers   connection: 'keep-alive',
+71 verbose headers   'x-served-by': 'cache-lhr6345-LHR',
+71 verbose headers   'x-cache': 'HIT',
+71 verbose headers   'x-cache-hits': '11',
+71 verbose headers   'x-timer': 'S1472660774.814834,VS0,VE0',
+71 verbose headers   vary: 'Accept-Encoding' }
+72 silly get cb [ 304,
+72 silly get   { date: 'Wed, 31 Aug 2016 16:26:14 GMT',
+72 silly get     via: '1.1 varnish',
+72 silly get     'cache-control': 'max-age=300',
+72 silly get     etag: '"1IUUBBNAFSLRNOMEHDGNJ1LTJ"',
+72 silly get     age: '192',
+72 silly get     connection: 'keep-alive',
+72 silly get     'x-served-by': 'cache-lhr6345-LHR',
+72 silly get     'x-cache': 'HIT',
+72 silly get     'x-cache-hits': '11',
+72 silly get     'x-timer': 'S1472660774.814834,VS0,VE0',
+72 silly get     vary: 'Accept-Encoding' } ]
+73 verbose etag https://registry.npmjs.org/fsevents from cache
+74 verbose get saving fsevents to C:\Users\mortoni\AppData\Roaming\npm-cache\registry.npmjs.org\fsevents\.cache.json
+75 verbose correctMkdir C:\Users\mortoni\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+76 silly resolveWithNewModule fsevents@1.0.14 checking installable status
+77 silly loadAllDepsIntoIdealTree Finishing
+78 silly idealTree:prePrune reacttabmenu@1.0.0
+78 silly idealTree:prePrune +-- acorn@3.3.0
+78 silly idealTree:prePrune +-- align-text@0.1.4
+78 silly idealTree:prePrune +-- amdefine@1.0.0
+78 silly idealTree:prePrune +-- ansi-regex@2.0.0
+78 silly idealTree:prePrune +-- ansi-styles@2.2.1
+78 silly idealTree:prePrune +-- anymatch@1.3.0
+78 silly idealTree:prePrune +-- arr-diff@2.0.0
+78 silly idealTree:prePrune +-- arr-flatten@1.0.1
+78 silly idealTree:prePrune +-- array-unique@0.2.1
+78 silly idealTree:prePrune +-- arrify@1.0.1
+78 silly idealTree:prePrune +-- asap@2.0.4
+78 silly idealTree:prePrune +-- assert@1.4.1
+78 silly idealTree:prePrune +-- async-each@1.0.1
+78 silly idealTree:prePrune +-- async@1.5.2
+78 silly idealTree:prePrune +-- babel-code-frame@6.11.0
+78 silly idealTree:prePrune +-- babel-core@6.14.0
+78 silly idealTree:prePrune +-- babel-generator@6.14.0
+78 silly idealTree:prePrune +-- babel-helper-builder-react-jsx@6.9.0
+78 silly idealTree:prePrune +-- babel-helper-call-delegate@6.8.0
+78 silly idealTree:prePrune +-- babel-helper-define-map@6.9.0
+78 silly idealTree:prePrune +-- babel-helper-function-name@6.8.0
+78 silly idealTree:prePrune +-- babel-helper-get-function-arity@6.8.0
+78 silly idealTree:prePrune +-- babel-helper-hoist-variables@6.8.0
+78 silly idealTree:prePrune +-- babel-helper-optimise-call-expression@6.8.0
+78 silly idealTree:prePrune +-- babel-helper-regex@6.9.0
+78 silly idealTree:prePrune +-- babel-helper-replace-supers@6.14.0
+78 silly idealTree:prePrune +-- babel-helpers@6.8.0
+78 silly idealTree:prePrune +-- babel-loader@6.2.5
+78 silly idealTree:prePrune +-- babel-messages@6.8.0
+78 silly idealTree:prePrune +-- babel-plugin-check-es2015-constants@6.8.0
+78 silly idealTree:prePrune +-- babel-plugin-syntax-async-functions@6.13.0
+78 silly idealTree:prePrune +-- babel-plugin-syntax-flow@6.13.0
+78 silly idealTree:prePrune +-- babel-plugin-syntax-jsx@6.13.0
+78 silly idealTree:prePrune +-- babel-plugin-transform-es2015-arrow-functions@6.8.0
+78 silly idealTree:prePrune +-- babel-plugin-transform-es2015-block-scoped-functions@6.8.0
+78 silly idealTree:prePrune +-- babel-plugin-transform-es2015-block-scoping@6.14.0
+78 silly idealTree:prePrune +-- babel-plugin-transform-es2015-classes@6.14.0
+78 silly idealTree:prePrune +-- babel-plugin-transform-es2015-computed-properties@6.8.0
+78 silly idealTree:prePrune +-- babel-plugin-transform-es2015-destructuring@6.9.0
+78 silly idealTree:prePrune +-- babel-plugin-transform-es2015-duplicate-keys@6.8.0
+78 silly idealTree:prePrune +-- babel-plugin-transform-es2015-for-of@6.8.0
+78 silly idealTree:prePrune +-- babel-plugin-transform-es2015-function-name@6.9.0
+78 silly idealTree:prePrune +-- babel-plugin-transform-es2015-literals@6.8.0
+78 silly idealTree:prePrune +-- babel-plugin-transform-es2015-modules-amd@6.8.0
+78 silly idealTree:prePrune +-- babel-plugin-transform-es2015-modules-commonjs@6.14.0
+78 silly idealTree:prePrune +-- babel-plugin-transform-es2015-modules-systemjs@6.14.0
+78 silly idealTree:prePrune +-- babel-plugin-transform-es2015-modules-umd@6.12.0
+78 silly idealTree:prePrune +-- babel-plugin-transform-es2015-object-super@6.8.0
+78 silly idealTree:prePrune +-- babel-plugin-transform-es2015-parameters@6.11.4
+78 silly idealTree:prePrune +-- babel-plugin-transform-es2015-shorthand-properties@6.8.0
+78 silly idealTree:prePrune +-- babel-plugin-transform-es2015-spread@6.8.0
+78 silly idealTree:prePrune +-- babel-plugin-transform-es2015-sticky-regex@6.8.0
+78 silly idealTree:prePrune +-- babel-plugin-transform-es2015-template-literals@6.8.0
+78 silly idealTree:prePrune +-- babel-plugin-transform-es2015-typeof-symbol@6.8.0
+78 silly idealTree:prePrune +-- babel-plugin-transform-es2015-unicode-regex@6.11.0
+78 silly idealTree:prePrune +-- babel-plugin-transform-flow-strip-types@6.14.0
+78 silly idealTree:prePrune +-- babel-plugin-transform-react-display-name@6.8.0
+78 silly idealTree:prePrune +-- babel-plugin-transform-react-jsx-self@6.11.0
+78 silly idealTree:prePrune +-- babel-plugin-transform-react-jsx-source@6.9.0
+78 silly idealTree:prePrune +-- babel-plugin-transform-react-jsx@6.8.0
+78 silly idealTree:prePrune +-- babel-plugin-transform-regenerator@6.14.0
+78 silly idealTree:prePrune +-- babel-plugin-transform-strict-mode@6.11.3
+78 silly idealTree:prePrune +-- babel-preset-es2015@6.14.0
+78 silly idealTree:prePrune +-- babel-preset-react@6.11.1
+78 silly idealTree:prePrune +-- babel-register@6.14.0
+78 silly idealTree:prePrune +-- babel-runtime@6.11.6
+78 silly idealTree:prePrune +-- babel-template@6.14.0
+78 silly idealTree:prePrune +-- babel-traverse@6.14.0
+78 silly idealTree:prePrune +-- babel-types@6.14.0
+78 silly idealTree:prePrune +-- babylon@6.9.1
+78 silly idealTree:prePrune +-- balanced-match@0.4.2
+78 silly idealTree:prePrune +-- base64-js@1.1.2
+78 silly idealTree:prePrune +-- Base64@0.2.1
+78 silly idealTree:prePrune +-- big.js@3.1.3
+78 silly idealTree:prePrune +-- binary-extensions@1.5.0
+78 silly idealTree:prePrune +-- brace-expansion@1.1.6
+78 silly idealTree:prePrune +-- braces@1.8.5
+78 silly idealTree:prePrune +-- browserify-zlib@0.1.4
+78 silly idealTree:prePrune +-- buffer-shims@1.0.0
+78 silly idealTree:prePrune +-- buffer@4.9.1
+78 silly idealTree:prePrune +-- camelcase@1.2.1
+78 silly idealTree:prePrune +-- center-align@0.1.3
+78 silly idealTree:prePrune +-- chalk@1.1.3
+78 silly idealTree:prePrune +-- chokidar@1.6.0
+78 silly idealTree:prePrune +-- cliui@2.1.0
+78 silly idealTree:prePrune | `-- wordwrap@0.0.2
+78 silly idealTree:prePrune +-- clone@1.0.2
+78 silly idealTree:prePrune +-- concat-map@0.0.1
+78 silly idealTree:prePrune +-- console-browserify@1.1.0
+78 silly idealTree:prePrune +-- constants-browserify@0.0.1
+78 silly idealTree:prePrune +-- convert-source-map@1.3.0
+78 silly idealTree:prePrune +-- core-js@2.4.1
+78 silly idealTree:prePrune +-- core-util-is@1.0.2
+78 silly idealTree:prePrune +-- crypto-browserify@3.2.8
+78 silly idealTree:prePrune +-- date-now@0.1.4
+78 silly idealTree:prePrune +-- debug@2.2.0
+78 silly idealTree:prePrune +-- decamelize@1.2.0
+78 silly idealTree:prePrune +-- detect-indent@3.0.1
+78 silly idealTree:prePrune +-- domain-browser@1.1.7
+78 silly idealTree:prePrune +-- emojis-list@2.0.1
+78 silly idealTree:prePrune +-- encoding@0.1.12
+78 silly idealTree:prePrune +-- enhanced-resolve@0.9.1
+78 silly idealTree:prePrune | `-- memory-fs@0.2.0
+78 silly idealTree:prePrune +-- errno@0.1.4
+78 silly idealTree:prePrune +-- escape-string-regexp@1.0.5
+78 silly idealTree:prePrune +-- esutils@2.0.2
+78 silly idealTree:prePrune +-- events@1.1.1
+78 silly idealTree:prePrune +-- expand-brackets@0.1.5
+78 silly idealTree:prePrune +-- expand-range@1.8.2
+78 silly idealTree:prePrune +-- extglob@0.3.2
+78 silly idealTree:prePrune +-- fbjs@0.8.4
+78 silly idealTree:prePrune | `-- core-js@1.2.7
+78 silly idealTree:prePrune +-- filename-regex@2.0.0
+78 silly idealTree:prePrune +-- fill-range@2.2.3
+78 silly idealTree:prePrune +-- for-in@0.1.5
+78 silly idealTree:prePrune +-- for-own@0.1.4
+78 silly idealTree:prePrune +-- get-stdin@4.0.1
+78 silly idealTree:prePrune +-- glob-base@0.3.0
+78 silly idealTree:prePrune +-- glob-parent@2.0.0
+78 silly idealTree:prePrune +-- globals@8.18.0
+78 silly idealTree:prePrune +-- graceful-fs@4.1.6
+78 silly idealTree:prePrune +-- has-ansi@2.0.0
+78 silly idealTree:prePrune +-- has-flag@1.0.0
+78 silly idealTree:prePrune +-- home-or-tmp@1.0.0
+78 silly idealTree:prePrune +-- http-browserify@1.7.0
+78 silly idealTree:prePrune +-- https-browserify@0.0.0
+78 silly idealTree:prePrune +-- iconv-lite@0.4.13
+78 silly idealTree:prePrune +-- ieee754@1.1.6
+78 silly idealTree:prePrune +-- immutable@3.8.1
+78 silly idealTree:prePrune +-- indexof@0.0.1
+78 silly idealTree:prePrune +-- inherits@2.0.1
+78 silly idealTree:prePrune +-- interpret@0.6.6
+78 silly idealTree:prePrune +-- invariant@2.2.1
+78 silly idealTree:prePrune +-- is-binary-path@1.0.1
+78 silly idealTree:prePrune +-- is-buffer@1.1.4
+78 silly idealTree:prePrune +-- is-dotfile@1.0.2
+78 silly idealTree:prePrune +-- is-equal-shallow@0.1.3
+78 silly idealTree:prePrune +-- is-extendable@0.1.1
+78 silly idealTree:prePrune +-- is-extglob@1.0.0
+78 silly idealTree:prePrune +-- is-finite@1.0.1
+78 silly idealTree:prePrune +-- is-glob@2.0.1
+78 silly idealTree:prePrune +-- is-number@2.1.0
+78 silly idealTree:prePrune +-- is-posix-bracket@0.1.1
+78 silly idealTree:prePrune +-- is-primitive@2.0.0
+78 silly idealTree:prePrune +-- is-stream@1.1.0
+78 silly idealTree:prePrune +-- isarray@1.0.0
+78 silly idealTree:prePrune +-- isobject@2.1.0
+78 silly idealTree:prePrune +-- isomorphic-fetch@2.2.1
+78 silly idealTree:prePrune +-- js-tokens@2.0.0
+78 silly idealTree:prePrune +-- jsesc@0.5.0
+78 silly idealTree:prePrune +-- json5@0.4.0
+78 silly idealTree:prePrune +-- kind-of@3.0.4
+78 silly idealTree:prePrune +-- lazy-cache@1.0.4
+78 silly idealTree:prePrune +-- loader-utils@0.2.15
+78 silly idealTree:prePrune | `-- json5@0.5.0
+78 silly idealTree:prePrune +-- lodash@4.15.0
+78 silly idealTree:prePrune +-- longest@1.0.1
+78 silly idealTree:prePrune +-- loose-envify@1.2.0
+78 silly idealTree:prePrune | `-- js-tokens@1.0.3
+78 silly idealTree:prePrune +-- memory-fs@0.3.0
+78 silly idealTree:prePrune +-- micromatch@2.3.11
+78 silly idealTree:prePrune +-- minimatch@3.0.3
+78 silly idealTree:prePrune +-- minimist@1.2.0
+78 silly idealTree:prePrune +-- mkdirp@0.5.1
+78 silly idealTree:prePrune | `-- minimist@0.0.8
+78 silly idealTree:prePrune +-- ms@0.7.1
+78 silly idealTree:prePrune +-- node-fetch@1.6.0
+78 silly idealTree:prePrune +-- node-libs-browser@0.6.0
+78 silly idealTree:prePrune | +-- isarray@0.0.1
+78 silly idealTree:prePrune | `-- readable-stream@1.1.14
+78 silly idealTree:prePrune +-- normalize-path@2.0.1
+78 silly idealTree:prePrune +-- number-is-nan@1.0.0
+78 silly idealTree:prePrune +-- object-assign@4.1.0
+78 silly idealTree:prePrune +-- object.omit@2.0.0
+78 silly idealTree:prePrune +-- optimist@0.6.1
+78 silly idealTree:prePrune | `-- minimist@0.0.10
+78 silly idealTree:prePrune +-- os-browserify@0.1.2
+78 silly idealTree:prePrune +-- os-tmpdir@1.0.1
+78 silly idealTree:prePrune +-- pako@0.2.9
+78 silly idealTree:prePrune +-- parse-glob@3.0.4
+78 silly idealTree:prePrune +-- path-browserify@0.0.0
+78 silly idealTree:prePrune +-- path-exists@1.0.0
+78 silly idealTree:prePrune +-- path-is-absolute@1.0.0
+78 silly idealTree:prePrune +-- pbkdf2-compat@2.0.1
+78 silly idealTree:prePrune +-- preserve@0.2.0
+78 silly idealTree:prePrune +-- private@0.1.6
+78 silly idealTree:prePrune +-- process-nextick-args@1.0.7
+78 silly idealTree:prePrune +-- process@0.11.8
+78 silly idealTree:prePrune +-- promise@7.1.1
+78 silly idealTree:prePrune +-- prr@0.0.0
+78 silly idealTree:prePrune +-- punycode@1.4.1
+78 silly idealTree:prePrune +-- querystring-es3@0.2.1
+78 silly idealTree:prePrune +-- querystring@0.2.0
+78 silly idealTree:prePrune +-- randomatic@1.1.5
+78 silly idealTree:prePrune +-- react-dom@15.3.1
+78 silly idealTree:prePrune +-- react@15.3.1
+78 silly idealTree:prePrune +-- readable-stream@2.1.5
+78 silly idealTree:prePrune +-- readdirp@2.1.0
+78 silly idealTree:prePrune +-- regenerate@1.3.1
+78 silly idealTree:prePrune +-- regenerator-runtime@0.9.5
+78 silly idealTree:prePrune +-- regex-cache@0.4.3
+78 silly idealTree:prePrune +-- regexpu-core@2.0.0
+78 silly idealTree:prePrune +-- regjsgen@0.2.0
+78 silly idealTree:prePrune +-- regjsparser@0.1.5
+78 silly idealTree:prePrune +-- repeat-element@1.1.2
+78 silly idealTree:prePrune +-- repeat-string@1.5.4
+78 silly idealTree:prePrune +-- repeating@1.1.3
+78 silly idealTree:prePrune +-- right-align@0.1.3
+78 silly idealTree:prePrune +-- ripemd160@0.2.0
+78 silly idealTree:prePrune +-- set-immediate-shim@1.0.1
+78 silly idealTree:prePrune +-- sha.js@2.2.6
+78 silly idealTree:prePrune +-- shebang-regex@1.0.0
+78 silly idealTree:prePrune +-- slash@1.0.0
+78 silly idealTree:prePrune +-- source-list-map@0.1.6
+78 silly idealTree:prePrune +-- source-map-support@0.2.10
+78 silly idealTree:prePrune | `-- source-map@0.1.32
+78 silly idealTree:prePrune +-- source-map@0.5.6
+78 silly idealTree:prePrune +-- stream-browserify@1.0.0
+78 silly idealTree:prePrune | +-- isarray@0.0.1
+78 silly idealTree:prePrune | `-- readable-stream@1.1.14
+78 silly idealTree:prePrune +-- string_decoder@0.10.31
+78 silly idealTree:prePrune +-- strip-ansi@3.0.1
+78 silly idealTree:prePrune +-- supports-color@2.0.0
+78 silly idealTree:prePrune +-- tapable@0.1.10
+78 silly idealTree:prePrune +-- timers-browserify@1.4.2
+78 silly idealTree:prePrune +-- to-fast-properties@1.0.2
+78 silly idealTree:prePrune +-- tty-browserify@0.0.0
+78 silly idealTree:prePrune +-- ua-parser-js@0.7.10
+78 silly idealTree:prePrune +-- uglify-js@2.6.4
+78 silly idealTree:prePrune | `-- async@0.2.10
+78 silly idealTree:prePrune +-- uglify-to-browserify@1.0.2
+78 silly idealTree:prePrune +-- url@0.10.3
+78 silly idealTree:prePrune | `-- punycode@1.3.2
+78 silly idealTree:prePrune +-- user-home@1.1.1
+78 silly idealTree:prePrune +-- util-deprecate@1.0.2
+78 silly idealTree:prePrune +-- util@0.10.3
+78 silly idealTree:prePrune +-- vm-browserify@0.0.4
+78 silly idealTree:prePrune +-- watchpack@0.2.9
+78 silly idealTree:prePrune | `-- async@0.9.2
+78 silly idealTree:prePrune +-- webpack-core@0.6.8
+78 silly idealTree:prePrune | `-- source-map@0.4.4
+78 silly idealTree:prePrune +-- webpack@1.13.2
+78 silly idealTree:prePrune | `-- supports-color@3.1.2
+78 silly idealTree:prePrune +-- whatwg-fetch@1.0.0
+78 silly idealTree:prePrune +-- window-size@0.1.0
+78 silly idealTree:prePrune +-- wordwrap@0.0.3
+78 silly idealTree:prePrune `-- yargs@3.10.0
+79 silly loadIdealTree Finishing
+80 silly currentTree reacttabmenu@1.0.0
+80 silly currentTree +-- acorn@3.3.0
+80 silly currentTree +-- align-text@0.1.4
+80 silly currentTree +-- amdefine@1.0.0
+80 silly currentTree +-- ansi-regex@2.0.0
+80 silly currentTree +-- ansi-styles@2.2.1
+80 silly currentTree +-- anymatch@1.3.0
+80 silly currentTree +-- arr-diff@2.0.0
+80 silly currentTree +-- arr-flatten@1.0.1
+80 silly currentTree +-- array-unique@0.2.1
+80 silly currentTree +-- arrify@1.0.1
+80 silly currentTree +-- asap@2.0.4
+80 silly currentTree +-- assert@1.4.1
+80 silly currentTree +-- async-each@1.0.1
+80 silly currentTree +-- async@1.5.2
+80 silly currentTree +-- babel-code-frame@6.11.0
+80 silly currentTree +-- babel-core@6.14.0
+80 silly currentTree +-- babel-generator@6.14.0
+80 silly currentTree +-- babel-helper-builder-react-jsx@6.9.0
+80 silly currentTree +-- babel-helper-call-delegate@6.8.0
+80 silly currentTree +-- babel-helper-define-map@6.9.0
+80 silly currentTree +-- babel-helper-function-name@6.8.0
+80 silly currentTree +-- babel-helper-get-function-arity@6.8.0
+80 silly currentTree +-- babel-helper-hoist-variables@6.8.0
+80 silly currentTree +-- babel-helper-optimise-call-expression@6.8.0
+80 silly currentTree +-- babel-helper-regex@6.9.0
+80 silly currentTree +-- babel-helper-replace-supers@6.14.0
+80 silly currentTree +-- babel-helpers@6.8.0
+80 silly currentTree +-- babel-loader@6.2.5
+80 silly currentTree +-- babel-messages@6.8.0
+80 silly currentTree +-- babel-plugin-check-es2015-constants@6.8.0
+80 silly currentTree +-- babel-plugin-syntax-async-functions@6.13.0
+80 silly currentTree +-- babel-plugin-syntax-flow@6.13.0
+80 silly currentTree +-- babel-plugin-syntax-jsx@6.13.0
+80 silly currentTree +-- babel-plugin-transform-es2015-arrow-functions@6.8.0
+80 silly currentTree +-- babel-plugin-transform-es2015-block-scoped-functions@6.8.0
+80 silly currentTree +-- babel-plugin-transform-es2015-block-scoping@6.14.0
+80 silly currentTree +-- babel-plugin-transform-es2015-classes@6.14.0
+80 silly currentTree +-- babel-plugin-transform-es2015-computed-properties@6.8.0
+80 silly currentTree +-- babel-plugin-transform-es2015-destructuring@6.9.0
+80 silly currentTree +-- babel-plugin-transform-es2015-duplicate-keys@6.8.0
+80 silly currentTree +-- babel-plugin-transform-es2015-for-of@6.8.0
+80 silly currentTree +-- babel-plugin-transform-es2015-function-name@6.9.0
+80 silly currentTree +-- babel-plugin-transform-es2015-literals@6.8.0
+80 silly currentTree +-- babel-plugin-transform-es2015-modules-amd@6.8.0
+80 silly currentTree +-- babel-plugin-transform-es2015-modules-commonjs@6.14.0
+80 silly currentTree +-- babel-plugin-transform-es2015-modules-systemjs@6.14.0
+80 silly currentTree +-- babel-plugin-transform-es2015-modules-umd@6.12.0
+80 silly currentTree +-- babel-plugin-transform-es2015-object-super@6.8.0
+80 silly currentTree +-- babel-plugin-transform-es2015-parameters@6.11.4
+80 silly currentTree +-- babel-plugin-transform-es2015-shorthand-properties@6.8.0
+80 silly currentTree +-- babel-plugin-transform-es2015-spread@6.8.0
+80 silly currentTree +-- babel-plugin-transform-es2015-sticky-regex@6.8.0
+80 silly currentTree +-- babel-plugin-transform-es2015-template-literals@6.8.0
+80 silly currentTree +-- babel-plugin-transform-es2015-typeof-symbol@6.8.0
+80 silly currentTree +-- babel-plugin-transform-es2015-unicode-regex@6.11.0
+80 silly currentTree +-- babel-plugin-transform-flow-strip-types@6.14.0
+80 silly currentTree +-- babel-plugin-transform-react-display-name@6.8.0
+80 silly currentTree +-- babel-plugin-transform-react-jsx-self@6.11.0
+80 silly currentTree +-- babel-plugin-transform-react-jsx-source@6.9.0
+80 silly currentTree +-- babel-plugin-transform-react-jsx@6.8.0
+80 silly currentTree +-- babel-plugin-transform-regenerator@6.14.0
+80 silly currentTree +-- babel-plugin-transform-strict-mode@6.11.3
+80 silly currentTree +-- babel-preset-es2015@6.14.0
+80 silly currentTree +-- babel-preset-react@6.11.1
+80 silly currentTree +-- babel-register@6.14.0
+80 silly currentTree +-- babel-runtime@6.11.6
+80 silly currentTree +-- babel-template@6.14.0
+80 silly currentTree +-- babel-traverse@6.14.0
+80 silly currentTree +-- babel-types@6.14.0
+80 silly currentTree +-- babylon@6.9.1
+80 silly currentTree +-- balanced-match@0.4.2
+80 silly currentTree +-- base64-js@1.1.2
+80 silly currentTree +-- Base64@0.2.1
+80 silly currentTree +-- big.js@3.1.3
+80 silly currentTree +-- binary-extensions@1.5.0
+80 silly currentTree +-- brace-expansion@1.1.6
+80 silly currentTree +-- braces@1.8.5
+80 silly currentTree +-- browserify-zlib@0.1.4
+80 silly currentTree +-- buffer-shims@1.0.0
+80 silly currentTree +-- buffer@4.9.1
+80 silly currentTree +-- camelcase@1.2.1
+80 silly currentTree +-- center-align@0.1.3
+80 silly currentTree +-- chalk@1.1.3
+80 silly currentTree +-- chokidar@1.6.0
+80 silly currentTree +-- cliui@2.1.0
+80 silly currentTree | `-- wordwrap@0.0.2
+80 silly currentTree +-- clone@1.0.2
+80 silly currentTree +-- concat-map@0.0.1
+80 silly currentTree +-- console-browserify@1.1.0
+80 silly currentTree +-- constants-browserify@0.0.1
+80 silly currentTree +-- convert-source-map@1.3.0
+80 silly currentTree +-- core-js@2.4.1
+80 silly currentTree +-- core-util-is@1.0.2
+80 silly currentTree +-- crypto-browserify@3.2.8
+80 silly currentTree +-- date-now@0.1.4
+80 silly currentTree +-- debug@2.2.0
+80 silly currentTree +-- decamelize@1.2.0
+80 silly currentTree +-- detect-indent@3.0.1
+80 silly currentTree +-- domain-browser@1.1.7
+80 silly currentTree +-- emojis-list@2.0.1
+80 silly currentTree +-- encoding@0.1.12
+80 silly currentTree +-- enhanced-resolve@0.9.1
+80 silly currentTree | `-- memory-fs@0.2.0
+80 silly currentTree +-- errno@0.1.4
+80 silly currentTree +-- escape-string-regexp@1.0.5
+80 silly currentTree +-- esutils@2.0.2
+80 silly currentTree +-- events@1.1.1
+80 silly currentTree +-- expand-brackets@0.1.5
+80 silly currentTree +-- expand-range@1.8.2
+80 silly currentTree +-- extglob@0.3.2
+80 silly currentTree +-- fbjs@0.8.4
+80 silly currentTree | `-- core-js@1.2.7
+80 silly currentTree +-- filename-regex@2.0.0
+80 silly currentTree +-- fill-range@2.2.3
+80 silly currentTree +-- for-in@0.1.5
+80 silly currentTree +-- for-own@0.1.4
+80 silly currentTree +-- get-stdin@4.0.1
+80 silly currentTree +-- glob-base@0.3.0
+80 silly currentTree +-- glob-parent@2.0.0
+80 silly currentTree +-- globals@8.18.0
+80 silly currentTree +-- graceful-fs@4.1.6
+80 silly currentTree +-- has-ansi@2.0.0
+80 silly currentTree +-- has-flag@1.0.0
+80 silly currentTree +-- home-or-tmp@1.0.0
+80 silly currentTree +-- http-browserify@1.7.0
+80 silly currentTree +-- https-browserify@0.0.0
+80 silly currentTree +-- iconv-lite@0.4.13
+80 silly currentTree +-- ieee754@1.1.6
+80 silly currentTree +-- immutable@3.8.1
+80 silly currentTree +-- indexof@0.0.1
+80 silly currentTree +-- inherits@2.0.1
+80 silly currentTree +-- interpret@0.6.6
+80 silly currentTree +-- invariant@2.2.1
+80 silly currentTree +-- is-binary-path@1.0.1
+80 silly currentTree +-- is-buffer@1.1.4
+80 silly currentTree +-- is-dotfile@1.0.2
+80 silly currentTree +-- is-equal-shallow@0.1.3
+80 silly currentTree +-- is-extendable@0.1.1
+80 silly currentTree +-- is-extglob@1.0.0
+80 silly currentTree +-- is-finite@1.0.1
+80 silly currentTree +-- is-glob@2.0.1
+80 silly currentTree +-- is-number@2.1.0
+80 silly currentTree +-- is-posix-bracket@0.1.1
+80 silly currentTree +-- is-primitive@2.0.0
+80 silly currentTree +-- is-stream@1.1.0
+80 silly currentTree +-- isarray@1.0.0
+80 silly currentTree +-- isobject@2.1.0
+80 silly currentTree +-- isomorphic-fetch@2.2.1
+80 silly currentTree +-- js-tokens@2.0.0
+80 silly currentTree +-- jsesc@0.5.0
+80 silly currentTree +-- json5@0.4.0
+80 silly currentTree +-- kind-of@3.0.4
+80 silly currentTree +-- lazy-cache@1.0.4
+80 silly currentTree +-- loader-utils@0.2.15
+80 silly currentTree | `-- json5@0.5.0
+80 silly currentTree +-- lodash@4.15.0
+80 silly currentTree +-- longest@1.0.1
+80 silly currentTree +-- loose-envify@1.2.0
+80 silly currentTree | `-- js-tokens@1.0.3
+80 silly currentTree +-- memory-fs@0.3.0
+80 silly currentTree +-- micromatch@2.3.11
+80 silly currentTree +-- minimatch@3.0.3
+80 silly currentTree +-- minimist@1.2.0
+80 silly currentTree +-- mkdirp@0.5.1
+80 silly currentTree | `-- minimist@0.0.8
+80 silly currentTree +-- ms@0.7.1
+80 silly currentTree +-- node-fetch@1.6.0
+80 silly currentTree +-- node-libs-browser@0.6.0
+80 silly currentTree | +-- isarray@0.0.1
+80 silly currentTree | `-- readable-stream@1.1.14
+80 silly currentTree +-- normalize-path@2.0.1
+80 silly currentTree +-- number-is-nan@1.0.0
+80 silly currentTree +-- object-assign@4.1.0
+80 silly currentTree +-- object.omit@2.0.0
+80 silly currentTree +-- optimist@0.6.1
+80 silly currentTree | `-- minimist@0.0.10
+80 silly currentTree +-- os-browserify@0.1.2
+80 silly currentTree +-- os-tmpdir@1.0.1
+80 silly currentTree +-- pako@0.2.9
+80 silly currentTree +-- parse-glob@3.0.4
+80 silly currentTree +-- path-browserify@0.0.0
+80 silly currentTree +-- path-exists@1.0.0
+80 silly currentTree +-- path-is-absolute@1.0.0
+80 silly currentTree +-- pbkdf2-compat@2.0.1
+80 silly currentTree +-- preserve@0.2.0
+80 silly currentTree +-- private@0.1.6
+80 silly currentTree +-- process-nextick-args@1.0.7
+80 silly currentTree +-- process@0.11.8
+80 silly currentTree +-- promise@7.1.1
+80 silly currentTree +-- prr@0.0.0
+80 silly currentTree +-- punycode@1.4.1
+80 silly currentTree +-- querystring-es3@0.2.1
+80 silly currentTree +-- querystring@0.2.0
+80 silly currentTree +-- randomatic@1.1.5
+80 silly currentTree +-- react-dom@15.3.1
+80 silly currentTree +-- react@15.3.1
+80 silly currentTree +-- readable-stream@2.1.5
+80 silly currentTree +-- readdirp@2.1.0
+80 silly currentTree +-- regenerate@1.3.1
+80 silly currentTree +-- regenerator-runtime@0.9.5
+80 silly currentTree +-- regex-cache@0.4.3
+80 silly currentTree +-- regexpu-core@2.0.0
+80 silly currentTree +-- regjsgen@0.2.0
+80 silly currentTree +-- regjsparser@0.1.5
+80 silly currentTree +-- repeat-element@1.1.2
+80 silly currentTree +-- repeat-string@1.5.4
+80 silly currentTree +-- repeating@1.1.3
+80 silly currentTree +-- right-align@0.1.3
+80 silly currentTree +-- ripemd160@0.2.0
+80 silly currentTree +-- set-immediate-shim@1.0.1
+80 silly currentTree +-- sha.js@2.2.6
+80 silly currentTree +-- shebang-regex@1.0.0
+80 silly currentTree +-- slash@1.0.0
+80 silly currentTree +-- source-list-map@0.1.6
+80 silly currentTree +-- source-map-support@0.2.10
+80 silly currentTree | `-- source-map@0.1.32
+80 silly currentTree +-- source-map@0.5.6
+80 silly currentTree +-- stream-browserify@1.0.0
+80 silly currentTree | +-- isarray@0.0.1
+80 silly currentTree | `-- readable-stream@1.1.14
+80 silly currentTree +-- string_decoder@0.10.31
+80 silly currentTree +-- strip-ansi@3.0.1
+80 silly currentTree +-- supports-color@2.0.0
+80 silly currentTree +-- tapable@0.1.10
+80 silly currentTree +-- timers-browserify@1.4.2
+80 silly currentTree +-- to-fast-properties@1.0.2
+80 silly currentTree +-- tty-browserify@0.0.0
+80 silly currentTree +-- ua-parser-js@0.7.10
+80 silly currentTree +-- uglify-js@2.6.4
+80 silly currentTree | `-- async@0.2.10
+80 silly currentTree +-- uglify-to-browserify@1.0.2
+80 silly currentTree +-- url@0.10.3
+80 silly currentTree | `-- punycode@1.3.2
+80 silly currentTree +-- user-home@1.1.1
+80 silly currentTree +-- util-deprecate@1.0.2
+80 silly currentTree +-- util@0.10.3
+80 silly currentTree +-- vm-browserify@0.0.4
+80 silly currentTree +-- watchpack@0.2.9
+80 silly currentTree | `-- async@0.9.2
+80 silly currentTree +-- webpack-core@0.6.8
+80 silly currentTree | `-- source-map@0.4.4
+80 silly currentTree +-- webpack@1.13.2
+80 silly currentTree | `-- supports-color@3.1.2
+80 silly currentTree +-- whatwg-fetch@1.0.0
+80 silly currentTree +-- window-size@0.1.0
+80 silly currentTree +-- wordwrap@0.0.3
+80 silly currentTree `-- yargs@3.10.0
+81 silly idealTree reacttabmenu@1.0.0
+81 silly idealTree +-- acorn@3.3.0
+81 silly idealTree +-- align-text@0.1.4
+81 silly idealTree +-- amdefine@1.0.0
+81 silly idealTree +-- ansi-regex@2.0.0
+81 silly idealTree +-- ansi-styles@2.2.1
+81 silly idealTree +-- anymatch@1.3.0
+81 silly idealTree +-- arr-diff@2.0.0
+81 silly idealTree +-- arr-flatten@1.0.1
+81 silly idealTree +-- array-unique@0.2.1
+81 silly idealTree +-- arrify@1.0.1
+81 silly idealTree +-- asap@2.0.4
+81 silly idealTree +-- assert@1.4.1
+81 silly idealTree +-- async-each@1.0.1
+81 silly idealTree +-- async@1.5.2
+81 silly idealTree +-- babel-code-frame@6.11.0
+81 silly idealTree +-- babel-core@6.14.0
+81 silly idealTree +-- babel-generator@6.14.0
+81 silly idealTree +-- babel-helper-builder-react-jsx@6.9.0
+81 silly idealTree +-- babel-helper-call-delegate@6.8.0
+81 silly idealTree +-- babel-helper-define-map@6.9.0
+81 silly idealTree +-- babel-helper-function-name@6.8.0
+81 silly idealTree +-- babel-helper-get-function-arity@6.8.0
+81 silly idealTree +-- babel-helper-hoist-variables@6.8.0
+81 silly idealTree +-- babel-helper-optimise-call-expression@6.8.0
+81 silly idealTree +-- babel-helper-regex@6.9.0
+81 silly idealTree +-- babel-helper-replace-supers@6.14.0
+81 silly idealTree +-- babel-helpers@6.8.0
+81 silly idealTree +-- babel-loader@6.2.5
+81 silly idealTree +-- babel-messages@6.8.0
+81 silly idealTree +-- babel-plugin-check-es2015-constants@6.8.0
+81 silly idealTree +-- babel-plugin-syntax-async-functions@6.13.0
+81 silly idealTree +-- babel-plugin-syntax-flow@6.13.0
+81 silly idealTree +-- babel-plugin-syntax-jsx@6.13.0
+81 silly idealTree +-- babel-plugin-transform-es2015-arrow-functions@6.8.0
+81 silly idealTree +-- babel-plugin-transform-es2015-block-scoped-functions@6.8.0
+81 silly idealTree +-- babel-plugin-transform-es2015-block-scoping@6.14.0
+81 silly idealTree +-- babel-plugin-transform-es2015-classes@6.14.0
+81 silly idealTree +-- babel-plugin-transform-es2015-computed-properties@6.8.0
+81 silly idealTree +-- babel-plugin-transform-es2015-destructuring@6.9.0
+81 silly idealTree +-- babel-plugin-transform-es2015-duplicate-keys@6.8.0
+81 silly idealTree +-- babel-plugin-transform-es2015-for-of@6.8.0
+81 silly idealTree +-- babel-plugin-transform-es2015-function-name@6.9.0
+81 silly idealTree +-- babel-plugin-transform-es2015-literals@6.8.0
+81 silly idealTree +-- babel-plugin-transform-es2015-modules-amd@6.8.0
+81 silly idealTree +-- babel-plugin-transform-es2015-modules-commonjs@6.14.0
+81 silly idealTree +-- babel-plugin-transform-es2015-modules-systemjs@6.14.0
+81 silly idealTree +-- babel-plugin-transform-es2015-modules-umd@6.12.0
+81 silly idealTree +-- babel-plugin-transform-es2015-object-super@6.8.0
+81 silly idealTree +-- babel-plugin-transform-es2015-parameters@6.11.4
+81 silly idealTree +-- babel-plugin-transform-es2015-shorthand-properties@6.8.0
+81 silly idealTree +-- babel-plugin-transform-es2015-spread@6.8.0
+81 silly idealTree +-- babel-plugin-transform-es2015-sticky-regex@6.8.0
+81 silly idealTree +-- babel-plugin-transform-es2015-template-literals@6.8.0
+81 silly idealTree +-- babel-plugin-transform-es2015-typeof-symbol@6.8.0
+81 silly idealTree +-- babel-plugin-transform-es2015-unicode-regex@6.11.0
+81 silly idealTree +-- babel-plugin-transform-flow-strip-types@6.14.0
+81 silly idealTree +-- babel-plugin-transform-react-display-name@6.8.0
+81 silly idealTree +-- babel-plugin-transform-react-jsx-self@6.11.0
+81 silly idealTree +-- babel-plugin-transform-react-jsx-source@6.9.0
+81 silly idealTree +-- babel-plugin-transform-react-jsx@6.8.0
+81 silly idealTree +-- babel-plugin-transform-regenerator@6.14.0
+81 silly idealTree +-- babel-plugin-transform-strict-mode@6.11.3
+81 silly idealTree +-- babel-preset-es2015@6.14.0
+81 silly idealTree +-- babel-preset-react@6.11.1
+81 silly idealTree +-- babel-register@6.14.0
+81 silly idealTree +-- babel-runtime@6.11.6
+81 silly idealTree +-- babel-template@6.14.0
+81 silly idealTree +-- babel-traverse@6.14.0
+81 silly idealTree +-- babel-types@6.14.0
+81 silly idealTree +-- babylon@6.9.1
+81 silly idealTree +-- balanced-match@0.4.2
+81 silly idealTree +-- base64-js@1.1.2
+81 silly idealTree +-- Base64@0.2.1
+81 silly idealTree +-- big.js@3.1.3
+81 silly idealTree +-- binary-extensions@1.5.0
+81 silly idealTree +-- brace-expansion@1.1.6
+81 silly idealTree +-- braces@1.8.5
+81 silly idealTree +-- browserify-zlib@0.1.4
+81 silly idealTree +-- buffer-shims@1.0.0
+81 silly idealTree +-- buffer@4.9.1
+81 silly idealTree +-- camelcase@1.2.1
+81 silly idealTree +-- center-align@0.1.3
+81 silly idealTree +-- chalk@1.1.3
+81 silly idealTree +-- chokidar@1.6.0
+81 silly idealTree +-- cliui@2.1.0
+81 silly idealTree | `-- wordwrap@0.0.2
+81 silly idealTree +-- clone@1.0.2
+81 silly idealTree +-- concat-map@0.0.1
+81 silly idealTree +-- console-browserify@1.1.0
+81 silly idealTree +-- constants-browserify@0.0.1
+81 silly idealTree +-- convert-source-map@1.3.0
+81 silly idealTree +-- core-js@2.4.1
+81 silly idealTree +-- core-util-is@1.0.2
+81 silly idealTree +-- crypto-browserify@3.2.8
+81 silly idealTree +-- date-now@0.1.4
+81 silly idealTree +-- debug@2.2.0
+81 silly idealTree +-- decamelize@1.2.0
+81 silly idealTree +-- detect-indent@3.0.1
+81 silly idealTree +-- domain-browser@1.1.7
+81 silly idealTree +-- emojis-list@2.0.1
+81 silly idealTree +-- encoding@0.1.12
+81 silly idealTree +-- enhanced-resolve@0.9.1
+81 silly idealTree | `-- memory-fs@0.2.0
+81 silly idealTree +-- errno@0.1.4
+81 silly idealTree +-- escape-string-regexp@1.0.5
+81 silly idealTree +-- esutils@2.0.2
+81 silly idealTree +-- events@1.1.1
+81 silly idealTree +-- expand-brackets@0.1.5
+81 silly idealTree +-- expand-range@1.8.2
+81 silly idealTree +-- extglob@0.3.2
+81 silly idealTree +-- fbjs@0.8.4
+81 silly idealTree | `-- core-js@1.2.7
+81 silly idealTree +-- filename-regex@2.0.0
+81 silly idealTree +-- fill-range@2.2.3
+81 silly idealTree +-- for-in@0.1.5
+81 silly idealTree +-- for-own@0.1.4
+81 silly idealTree +-- get-stdin@4.0.1
+81 silly idealTree +-- glob-base@0.3.0
+81 silly idealTree +-- glob-parent@2.0.0
+81 silly idealTree +-- globals@8.18.0
+81 silly idealTree +-- graceful-fs@4.1.6
+81 silly idealTree +-- has-ansi@2.0.0
+81 silly idealTree +-- has-flag@1.0.0
+81 silly idealTree +-- home-or-tmp@1.0.0
+81 silly idealTree +-- http-browserify@1.7.0
+81 silly idealTree +-- https-browserify@0.0.0
+81 silly idealTree +-- iconv-lite@0.4.13
+81 silly idealTree +-- ieee754@1.1.6
+81 silly idealTree +-- immutable@3.8.1
+81 silly idealTree +-- indexof@0.0.1
+81 silly idealTree +-- inherits@2.0.1
+81 silly idealTree +-- interpret@0.6.6
+81 silly idealTree +-- invariant@2.2.1
+81 silly idealTree +-- is-binary-path@1.0.1
+81 silly idealTree +-- is-buffer@1.1.4
+81 silly idealTree +-- is-dotfile@1.0.2
+81 silly idealTree +-- is-equal-shallow@0.1.3
+81 silly idealTree +-- is-extendable@0.1.1
+81 silly idealTree +-- is-extglob@1.0.0
+81 silly idealTree +-- is-finite@1.0.1
+81 silly idealTree +-- is-glob@2.0.1
+81 silly idealTree +-- is-number@2.1.0
+81 silly idealTree +-- is-posix-bracket@0.1.1
+81 silly idealTree +-- is-primitive@2.0.0
+81 silly idealTree +-- is-stream@1.1.0
+81 silly idealTree +-- isarray@1.0.0
+81 silly idealTree +-- isobject@2.1.0
+81 silly idealTree +-- isomorphic-fetch@2.2.1
+81 silly idealTree +-- js-tokens@2.0.0
+81 silly idealTree +-- jsesc@0.5.0
+81 silly idealTree +-- json5@0.4.0
+81 silly idealTree +-- kind-of@3.0.4
+81 silly idealTree +-- lazy-cache@1.0.4
+81 silly idealTree +-- loader-utils@0.2.15
+81 silly idealTree | `-- json5@0.5.0
+81 silly idealTree +-- lodash@4.15.0
+81 silly idealTree +-- longest@1.0.1
+81 silly idealTree +-- loose-envify@1.2.0
+81 silly idealTree | `-- js-tokens@1.0.3
+81 silly idealTree +-- memory-fs@0.3.0
+81 silly idealTree +-- micromatch@2.3.11
+81 silly idealTree +-- minimatch@3.0.3
+81 silly idealTree +-- minimist@1.2.0
+81 silly idealTree +-- mkdirp@0.5.1
+81 silly idealTree | `-- minimist@0.0.8
+81 silly idealTree +-- ms@0.7.1
+81 silly idealTree +-- node-fetch@1.6.0
+81 silly idealTree +-- node-libs-browser@0.6.0
+81 silly idealTree | +-- isarray@0.0.1
+81 silly idealTree | `-- readable-stream@1.1.14
+81 silly idealTree +-- normalize-path@2.0.1
+81 silly idealTree +-- number-is-nan@1.0.0
+81 silly idealTree +-- object-assign@4.1.0
+81 silly idealTree +-- object.omit@2.0.0
+81 silly idealTree +-- optimist@0.6.1
+81 silly idealTree | `-- minimist@0.0.10
+81 silly idealTree +-- os-browserify@0.1.2
+81 silly idealTree +-- os-tmpdir@1.0.1
+81 silly idealTree +-- pako@0.2.9
+81 silly idealTree +-- parse-glob@3.0.4
+81 silly idealTree +-- path-browserify@0.0.0
+81 silly idealTree +-- path-exists@1.0.0
+81 silly idealTree +-- path-is-absolute@1.0.0
+81 silly idealTree +-- pbkdf2-compat@2.0.1
+81 silly idealTree +-- preserve@0.2.0
+81 silly idealTree +-- private@0.1.6
+81 silly idealTree +-- process-nextick-args@1.0.7
+81 silly idealTree +-- process@0.11.8
+81 silly idealTree +-- promise@7.1.1
+81 silly idealTree +-- prr@0.0.0
+81 silly idealTree +-- punycode@1.4.1
+81 silly idealTree +-- querystring-es3@0.2.1
+81 silly idealTree +-- querystring@0.2.0
+81 silly idealTree +-- randomatic@1.1.5
+81 silly idealTree +-- react-dom@15.3.1
+81 silly idealTree +-- react@15.3.1
+81 silly idealTree +-- readable-stream@2.1.5
+81 silly idealTree +-- readdirp@2.1.0
+81 silly idealTree +-- regenerate@1.3.1
+81 silly idealTree +-- regenerator-runtime@0.9.5
+81 silly idealTree +-- regex-cache@0.4.3
+81 silly idealTree +-- regexpu-core@2.0.0
+81 silly idealTree +-- regjsgen@0.2.0
+81 silly idealTree +-- regjsparser@0.1.5
+81 silly idealTree +-- repeat-element@1.1.2
+81 silly idealTree +-- repeat-string@1.5.4
+81 silly idealTree +-- repeating@1.1.3
+81 silly idealTree +-- right-align@0.1.3
+81 silly idealTree +-- ripemd160@0.2.0
+81 silly idealTree +-- set-immediate-shim@1.0.1
+81 silly idealTree +-- sha.js@2.2.6
+81 silly idealTree +-- shebang-regex@1.0.0
+81 silly idealTree +-- slash@1.0.0
+81 silly idealTree +-- source-list-map@0.1.6
+81 silly idealTree +-- source-map-support@0.2.10
+81 silly idealTree | `-- source-map@0.1.32
+81 silly idealTree +-- source-map@0.5.6
+81 silly idealTree +-- stream-browserify@1.0.0
+81 silly idealTree | +-- isarray@0.0.1
+81 silly idealTree | `-- readable-stream@1.1.14
+81 silly idealTree +-- string_decoder@0.10.31
+81 silly idealTree +-- strip-ansi@3.0.1
+81 silly idealTree +-- supports-color@2.0.0
+81 silly idealTree +-- tapable@0.1.10
+81 silly idealTree +-- timers-browserify@1.4.2
+81 silly idealTree +-- to-fast-properties@1.0.2
+81 silly idealTree +-- tty-browserify@0.0.0
+81 silly idealTree +-- ua-parser-js@0.7.10
+81 silly idealTree +-- uglify-js@2.6.4
+81 silly idealTree | `-- async@0.2.10
+81 silly idealTree +-- uglify-to-browserify@1.0.2
+81 silly idealTree +-- url@0.10.3
+81 silly idealTree | `-- punycode@1.3.2
+81 silly idealTree +-- user-home@1.1.1
+81 silly idealTree +-- util-deprecate@1.0.2
+81 silly idealTree +-- util@0.10.3
+81 silly idealTree +-- vm-browserify@0.0.4
+81 silly idealTree +-- watchpack@0.2.9
+81 silly idealTree | `-- async@0.9.2
+81 silly idealTree +-- webpack-core@0.6.8
+81 silly idealTree | `-- source-map@0.4.4
+81 silly idealTree +-- webpack@1.13.2
+81 silly idealTree | `-- supports-color@3.1.2
+81 silly idealTree +-- whatwg-fetch@1.0.0
+81 silly idealTree +-- window-size@0.1.0
+81 silly idealTree +-- wordwrap@0.0.3
+81 silly idealTree `-- yargs@3.10.0
+82 silly generateActionsToTake Starting
+83 silly install generateActionsToTake
+84 silly generateActionsToTake Finishing
+85 silly diffTrees action count 1
+86 silly diffTrees update immutable@3.8.1
+87 silly decomposeActions action count 8
+88 silly decomposeActions fetch immutable@3.8.1
+89 silly decomposeActions extract immutable@3.8.1
+90 silly decomposeActions test immutable@3.8.1
+91 silly decomposeActions preinstall immutable@3.8.1
+92 silly decomposeActions build immutable@3.8.1
+93 silly decomposeActions install immutable@3.8.1
+94 silly decomposeActions postinstall immutable@3.8.1
+95 silly decomposeActions finalize immutable@3.8.1
+96 silly executeActions Starting
+97 silly install executeActions
+98 silly doSerial global-install 0
+99 silly doParallel fetch 1
+100 verbose correctMkdir C:\Users\mortoni\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+101 verbose lock using C:\Users\mortoni\AppData\Roaming\npm-cache\_locks\staging-7cf8ec03a091bb39.lock for d:\project\react\reactTabMenu\node_modules\.staging
+102 silly doParallel extract 1
+103 silly extract immutable@3.8.1
+104 verbose unbuild node_modules\.staging\immutable-304f8090
+105 silly gentlyRm d:\project\react\reactTabMenu\node_modules\.staging\immutable-304f8090 is being purged from base d:\project\react\reactTabMenu
+106 verbose gentlyRm don't care about contents; nuking d:\project\react\reactTabMenu\node_modules\.staging\immutable-304f8090
+107 verbose tar unpack C:\Users\mortoni\AppData\Roaming\npm-cache\immutable\3.8.1\package.tgz
+108 verbose tar unpacking to d:\project\react\reactTabMenu\node_modules\.staging\immutable-304f8090
+109 silly gentlyRm d:\project\react\reactTabMenu\node_modules\.staging\immutable-304f8090 is being purged
+110 verbose gentlyRm don't care about contents; nuking d:\project\react\reactTabMenu\node_modules\.staging\immutable-304f8090
+111 silly gunzTarPerm modes [ '777', '666' ]
+112 silly gunzTarPerm extractEntry package.json
+113 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+114 silly gunzTarPerm extractEntry README.md
+115 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+116 silly gunzTarPerm extractEntry LICENSE
+117 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+118 silly gunzTarPerm extractEntry PATENTS
+119 silly gunzTarPerm modified mode [ 'PATENTS', 420, 438 ]
+120 silly gunzTarPerm extractEntry contrib/cursor/README.md
+121 silly gunzTarPerm modified mode [ 'contrib/cursor/README.md', 420, 438 ]
+122 silly gunzTarPerm extractEntry contrib/cursor/index.js
+123 silly gunzTarPerm modified mode [ 'contrib/cursor/index.js', 420, 438 ]
+124 silly gunzTarPerm extractEntry contrib/cursor/__tests__/Cursor.ts.skip
+125 silly gunzTarPerm modified mode [ 'contrib/cursor/__tests__/Cursor.ts.skip', 420, 438 ]
+126 silly gunzTarPerm extractEntry contrib/cursor/index.d.ts
+127 silly gunzTarPerm modified mode [ 'contrib/cursor/index.d.ts', 420, 438 ]
+128 silly gunzTarPerm extractEntry dist/immutable.js
+129 silly gunzTarPerm modified mode [ 'dist/immutable.js', 420, 438 ]
+130 silly gunzTarPerm extractEntry dist/immutable.min.js
+131 silly gunzTarPerm modified mode [ 'dist/immutable.min.js', 420, 438 ]
+132 silly gunzTarPerm extractEntry dist/immutable-nonambient.d.ts
+133 silly gunzTarPerm modified mode [ 'dist/immutable-nonambient.d.ts', 420, 438 ]
+134 silly gunzTarPerm extractEntry dist/immutable.d.ts
+135 silly gunzTarPerm modified mode [ 'dist/immutable.d.ts', 420, 438 ]
+136 silly gunzTarPerm extractEntry dist/immutable.js.flow
+137 silly gunzTarPerm modified mode [ 'dist/immutable.js.flow', 420, 438 ]
+138 silly gentlyRm d:\project\react\reactTabMenu\node_modules\.staging\immutable-304f8090\node_modules is being purged
+139 verbose gentlyRm don't care about contents; nuking d:\project\react\reactTabMenu\node_modules\.staging\immutable-304f8090\node_modules
+140 silly doParallel preinstall 1
+141 silly preinstall immutable@3.8.1 d:\project\react\reactTabMenu\node_modules\.staging\immutable-304f8090
+142 info lifecycle immutable@3.8.1~preinstall: immutable@3.8.1
+143 silly lifecycle immutable@3.8.1~preinstall: no script for preinstall, continuing
+144 silly doReverseSerial remove 0
+145 silly doSerial move 0
+146 silly doSerial finalize 1
+147 silly finalize d:\project\react\reactTabMenu\node_modules\immutable
+148 verbose unlock done using C:\Users\mortoni\AppData\Roaming\npm-cache\_locks\staging-7cf8ec03a091bb39.lock for d:\project\react\reactTabMenu\node_modules\.staging
+149 silly rollbackFailedOptional Starting
+150 silly rollbackFailedOptional Finishing
+151 silly runTopLevelLifecycles Starting
+152 silly runTopLevelLifecycles Finishing
+153 silly install printInstalled
+154 warn optional Skipping failed optional dependency /chokidar/fsevents:
+155 warn notsup Not compatible with your operating system or architecture: fsevents@1.0.14
+156 warn reacttabmenu@1.0.0 No repository field.
+157 verbose stack Error: EPERM: operation not permitted, rename 'd:\project\react\reactTabMenu\node_modules\immutable' -> 'd:\project\react\reactTabMenu\node_modules\.immutable.DELETE'
+157 verbose stack     at moveAway (C:\Program Files\nodejs\node_modules\npm\lib\install\action\finalize.js:38:5)
+157 verbose stack     at destStatted (C:\Program Files\nodejs\node_modules\npm\lib\install\action\finalize.js:27:7)
+157 verbose stack     at FSReqWrap.oncomplete (fs.js:82:15)
+157 verbose stack
+157 verbose stack Error: EPERM: operation not permitted, rename 'd:\project\react\reactTabMenu\node_modules\immutable' -> 'd:\project\react\reactTabMenu\node_modules\.immutable.DELETE'
+157 verbose stack     at Error (native)
+158 verbose cwd d:\project\react\reactTabMenu
+159 error Windows_NT 6.1.7601
+160 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "immutable"
+161 error node v5.12.0
+162 error npm  v3.8.6
+163 error path d:\project\react\reactTabMenu\node_modules\immutable
+164 error code EPERM
+165 error errno -4048
+166 error syscall rename
+167 error Error: EPERM: operation not permitted, rename 'd:\project\react\reactTabMenu\node_modules\immutable' -> 'd:\project\react\reactTabMenu\node_modules\.immutable.DELETE'
+167 error     at moveAway (C:\Program Files\nodejs\node_modules\npm\lib\install\action\finalize.js:38:5)
+167 error     at destStatted (C:\Program Files\nodejs\node_modules\npm\lib\install\action\finalize.js:27:7)
+167 error     at FSReqWrap.oncomplete (fs.js:82:15)
+167 error
+167 error Error: EPERM: operation not permitted, rename 'd:\project\react\reactTabMenu\node_modules\immutable' -> 'd:\project\react\reactTabMenu\node_modules\.immutable.DELETE'
+167 error     at Error (native)
+167 error  { [Error: EPERM: operation not permitted, rename 'd:\project\react\reactTabMenu\node_modules\immutable' -> 'd:\project\react\reactTabMenu\node_modules\.immutable.DELETE'] parent: 'reacttabmenu' }
+168 error Please try running this command again as root/Administrator.
+169 verbose exit [ -4048, true ]

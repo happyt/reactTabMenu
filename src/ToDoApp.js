@@ -73,7 +73,7 @@ var ToDoApp = React.createClass({
         <ToDoList items={ this.state.items } removeItem={ this.removeItem } />
         <form className="pure-form-aligned" onSubmit={ this.handleSubmit }>
         <div className="pure-control-group">
-            <label for="name">Next item</label>
+            <label htmlFor="name">Next item</label>
             <input onChange={ this.onChange } value={ this.state.text } />
             <button className="pure-button pure-button-success">{ 'Add # ' + (this.state.items.length + 1) }</button>
           </div>
