@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import ReactDOM from 'react-dom';
 
 
@@ -51,10 +51,6 @@ class ToDoDemo extends React.Component {
   }
 }
 
-// ------ New File ----- //
-//import React, { PropTypes } from 'react';
-//import TodoListItem from 'TodoListItem';
-
 class TodoList extends React.Component {
 
   mapToListItems = (items, props) => {
@@ -95,9 +91,6 @@ class TodoList extends React.Component {
 
   static displayName = "TodoList";
 }
-
-// ------ New File ----- //
-//import React, { PropTypes } from 'react';
 
 class TodoListItem extends React.Component {
 

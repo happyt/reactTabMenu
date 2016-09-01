@@ -7,10 +7,22 @@ class ScrollingList extends React.Component {
         this.state = {
             txt : "starter",
             items: [
-                {line:1, text: "abcd"},
-                {line:2, text: "bbbb"},
-                {line:3, text: "cccc"},
-                {line:4, text: "dddd"}
+            {   content: "Item One",
+                complete: true,
+                order: 1
+            },
+            {   content: "Item Two",
+                complete: false,
+                order: 2
+            },
+            {   content: "Item Three",
+                complete: false,
+                order: 3
+            },
+            {   content: "Item Four",
+                complete: false,
+                order: 4
+            }
             ]
         };
         this.update = this.update.bind(this);
@@ -26,5 +38,4 @@ class ScrollingList extends React.Component {
   
     render() {
     }
-
 }

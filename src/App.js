@@ -3,9 +3,10 @@ import ReactDOM from 'react-dom';
 import Lister from '../src/Lister.js';
 import Fire from '../src/Fire.js';
 import ToDoApp from '../src/ToDoApp.js';
+import StrapBList from '../src/StrapBList.js';
+import StrapAList from '../src/StrapAList.js';
 import Sliders from '../src/Sliders.js';
 import Actions from '../src/Actions.js';
-import ToDoDemo from '../src/ToDoDemo.js';
 
 class App extends React.Component {
     constructor() {
@@ -26,6 +27,7 @@ class App extends React.Component {
     render() {
         return (
             <div>
+                <h2>Header</h2>
                 <div>
                     <Tabs
                         currentTab={this.state.currentTab}
@@ -41,13 +43,19 @@ class App extends React.Component {
     }
 }
 
+var strapList = [
+    { 'id': 1, 'title': 'Green', 'text': 'the quick brown fox' },
+    { 'id': 2, 'title': 'Blue', 'text': 'alphabetti spaghetti' }
+];
+
 var tabList = [
     { 'id': 1, 'name': 'Users', 'url': '/one' },
     { 'id': 2, 'name': 'Fire', 'url': '/two' },
     { 'id': 3, 'name': 'ToDo', 'url': '/three' },
-    { 'id': 4, 'name': 'FourZ', 'url': '/four' },
-    { 'id': 5, 'name': 'Five', 'url': '/five' },
-    { 'id': 6, 'name': 'Sliders', 'url': '/six' }
+    { 'id': 4, 'name': 'StrapA', 'url': '/four' },
+    { 'id': 5, 'name': 'StrapLean', 'url': '/five' },
+    { 'id': 6, 'name': 'Sliders', 'url': '/six' },
+    { 'id': 7, 'name': 'Actions', 'url': '/seven' }
 ];
 
 var Tab = React.createClass({
@@ -121,13 +129,14 @@ var Content = React.createClass({
                 {this.props.currentTab === 4 ?
                 <div className="Four">
                     <img width="32" src="images/image4.png" />
+                    <StrapAList straps={strapList} />
                 </div>
                 :null}
 
                 {this.props.currentTab === 5 ?
                 <div className="Five">
                     <img width="32" src="images/image5.jpg" />
-                    <ToDoDemo />
+                    <StrapBList straps={strapList} />
                 </div>
                 :null}
 
@@ -137,6 +146,14 @@ var Content = React.createClass({
                     <Sliders />
                 </div>
                 :null}
+
+                 {this.props.currentTab === 7 ?
+                <div className="Seven">
+                    <img width="48" src="images/image7.png" />
+                    <Actions />
+                </div>
+                :null}
+
             </div>
         );
     }
