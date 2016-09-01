@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import Lister from '../src/Lister.js';
 import Fire from '../src/Fire.js';
 import ToDoApp from '../src/ToDoApp.js';
-import StrapBList from '../src/StrapAList.js';
-import StrapAList from '../src/StrapBList.js';  // not working
+import StrapAList from '../src/StrapAList.js';
+import StrapBList from '../src/StrapBList.js';  // not working
 import Sliders from '../src/Sliders.js';
 import Buttons from '../src/Buttons.js';
 import Actions from '../src/Actions.js';

@@ -1,63 +1,72 @@
+@font-face {
+    font-family: SF_Wonder_Comic;
+    src: url(../fonts/SF_Wonder_Comic.ttf);
+}
 
-        a:link {
-            color: white;
-            background-color: dodgerBlue;
-        }
-        
-        .pure-button-success,
-        .pure-button-error,
-        .pure-button-warning,
-        .pure-button-secondary {
-            color: black;
-            border-radius: 4px;
-            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-            border: solid #444444 1px;
-        }
-        .pure-button-success {
-            background: rgb(152,251,152); /* this is a pale green */
-        }
-        .pure-button-error {
-            color: white;
-            background: rgb(220,20,60); /* this is a crimson red */
-        }
-        .pure-button-warning {
-            background: rgb(255,255,0); /* this is an yellow */
-        }
-        .pure-button-secondary {
-            background: rgb(175,238,238); /* this is a pale turquoise */
-        }
-        .pure-menu-link {
-            border-top-left-radius: 4px;
-            border-top-right-radius: 4px;
-            padding: .5em 1.5em;
-            border: 1px solid #444444;
-            border-bottom: none;    
-        }    
-        .pure-menu-link:hover, .pure-menu-link:focus {
-            color: white;
-            background: #1460aa;
-        }
-        .pure-menu-selected .pure-menu-link {
-            background-color: white;
-            color: dodgerBlue;            
-        }
 
-        .ToDo-App {
-            max-width: 90%;
-            margin: 0 auto;
-            margin-top: 25px;
-        }
+div {
+    font-family: SF_Wonder_Comic;
+}
 
-        .TodoListItem {
-            display: flex;
-        }
+a:link {
+    color: white;
+    background-color: dodgerBlue;
+}
 
-        .TodoListItem-content {
-            flex: 1;
-            line-height: 36px;
-        }
+.pure-button-success,
+.pure-button-error,
+.pure-button-warning,
+.pure-button-secondary {
+    color: black;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    border: solid #444444 1px;
+}
+.pure-button-success {
+    background: rgb(152,251,152); /* this is a pale green */
+}
+.pure-button-error {
+    color: white;
+    background: rgb(220,20,60); /* this is a crimson red */
+}
+.pure-button-warning {
+    background: rgb(255,255,0); /* this is an yellow */
+}
+.pure-button-secondary {
+    background: rgb(175,238,238); /* this is a pale turquoise */
+}
+.pure-menu-link {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: .5em 1.5em;
+    border: 1px solid #444444;
+    border-bottom: none;    
+}    
+.pure-menu-link:hover, .pure-menu-link:focus {
+    color: white;
+    background: #1460aa;
+}
+.pure-menu-selected .pure-menu-link {
+    background-color: white;
+    color: dodgerBlue;            
+}
 
-        .TodoListItem-complete {
-            display: inline-block;
-            margin-right: 20px;
-        }
+.ToDo-App {
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.TodoListItem {
+    display: flex;
+}
+
+.TodoListItem-content {
+    flex: 1;
+    line-height: 36px;
+}
+
+.TodoListItem-complete {
+    display: inline-block;
+    margin-right: 20px;
+}
