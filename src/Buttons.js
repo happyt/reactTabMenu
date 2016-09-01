@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-class Actions extends React.Component {
+class Buttons extends React.Component {
       constructor() {
         super();
         this.state = {
@@ -71,4 +71,4 @@ const InputBox = (props) => {
 
 const Camera = () => <span className="fa fa-camera-retro"></span>
 
-module.exports = Actions;
+module.exports = Buttons;

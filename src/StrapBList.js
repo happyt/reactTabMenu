@@ -1,3 +1,5 @@
+// can't get this functional version working yet'
+
 const StrapBList = props => {
     const strapList = renderStraps(props.straps);
 

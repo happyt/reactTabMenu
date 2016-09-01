@@ -3,9 +3,10 @@ import ReactDOM from 'react-dom';
 import Lister from '../src/Lister.js';
 import Fire from '../src/Fire.js';
 import ToDoApp from '../src/ToDoApp.js';
-import StrapBList from '../src/StrapBList.js';
-import StrapAList from '../src/StrapAList.js';
+import StrapBList from '../src/StrapAList.js';
+import StrapAList from '../src/StrapBList.js';  // not working
 import Sliders from '../src/Sliders.js';
+import Buttons from '../src/Buttons.js';
 import Actions from '../src/Actions.js';
 
 class App extends React.Component {
@@ -55,7 +56,8 @@ var tabList = [
     { 'id': 4, 'name': 'StrapA', 'url': '/four' },
     { 'id': 5, 'name': 'StrapLean', 'url': '/five' },
     { 'id': 6, 'name': 'Sliders', 'url': '/six' },
-    { 'id': 7, 'name': 'Actions', 'url': '/seven' }
+    { 'id': 7, 'name': 'Buttons', 'url': '/seven' },
+    { 'id': 8, 'name': 'Actions', 'url': '/eight' }
 ];
 
 var Tab = React.createClass({
@@ -142,14 +144,21 @@ var Content = React.createClass({
 
                  {this.props.currentTab === 6 ?
                 <div className="Six">
-                    <img width="48" src="images/image6.jpg" />
+                    <img width="60" src="images/image6.jpg" />
                     <Sliders />
                 </div>
                 :null}
 
                  {this.props.currentTab === 7 ?
                 <div className="Seven">
-                    <img width="48" src="images/image7.png" />
+                    <img width="40" src="images/image7.png" />
+                    <Buttons />
+                </div>
+                :null}
+
+                 {this.props.currentTab === 8 ?
+                <div className="Eight">
+                    <img width="40" src="images/image8.png" />
                     <Actions />
                 </div>
                 :null}
