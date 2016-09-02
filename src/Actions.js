@@ -61,19 +61,25 @@ class Actions extends React.Component {
     }
   
   render() {
-    return <h4>
-        <InputBox displayText={this.state.displayText} update={this.update} />
+    return (
+        <div>
+            <InputBox displayText={this.state.displayText} update={this.update} />
+            <div>
+            {this.state.badger ?
+                <div>ON</div>
+                :
+                <div>OFF</div>
+                }
+                <Button  whenClicked={(e) => this.handleClick(e)}><Icon size="1.5rem" icon="alarm" />Action 1</Button>  
+                <Button ref="abc" whenClicked={(e) => this.handleClick(e)}><Icon size="1.5rem" icon="language" />Action 2</Button>  
+            </div>
+            <br />
+            <PanelCheck title="Try Me" toggleName="Toggle this "></PanelCheck>
+            <br />
+            <PanelCheckDrop title="Next option" dropTitle="Select value" toggleName="Toggle this "></PanelCheckDrop>
 
-        {this.state.badger ?
-        <div>ON</div>
-        :
-        <div>OFF</div>
-        }
-        <Button  whenClicked={(e) => this.handleClick(e)}><Icon size="1.5rem" icon="alarm" />Action 1</Button>  
-        <Button ref="abc" whenClicked={(e) => this.handleClick(e)}><Icon size="1.5rem" icon="language" />Action 2</Button>  
-        <PanelCheck />
-
-    </h4>
+        </div>
+    );
   }
 }
 
@@ -98,19 +104,63 @@ const InputBox = (props) => {
     );    
 }
 
+const PanelF = (props) => {
+    return (
+        <div>
+            <div className="mypanel-shell pure-u-1-3">
+                <div className="mypanel-title">another title</div>                    
+                <div>
+                    <input type="checkbox" name="vehicle" value="Bike">QQQ</input> 
+                    <button className="pure-button pure-button-success"
+                    onClick={() => this.props.whenClicked() } >
+                    {this.props.children}
+                    </button>
+                </div>
+            </div>
+        </div>
+    );    
+}
+
+//const PanelCheck = (props) => {
+
 class PanelCheck extends React.Component {
     render() {
         return (
             <div>
                 <div className="mypanel-shell pure-u-1-3">
-                    <div className="mypanel-title">another title</div>                    
-                    <div>
-                    XXX
-                        <button className="pure-button pure-button-success"
-                        onClick={() => this.props.whenClicked() } >
-                        {this.props.children}
-                        </button>
-                    </div>
+                    <div className="mypanel-title">{this.props.title}</div>                    
+                    <div  className="mypanel-body">
+                        <h3>{this.props.toggleName}
+                       <input type="checkbox" name="vehicle" 
+                                onClick={() => this.props.whenClicked() }></input> 
+                        </h3>
+                     </div>
+                </div>
+            </div>
+        );
+    }
+}
+
+class PanelCheckDrop extends React.Component {
+    render() {
+        return (
+            <div>
+                <div className="mypanel-shell pure-u-1-3">
+                    <div className="mypanel-title">{this.props.title}</div>                    
+                    <div  className="mypanel-body">
+                        <h3>{this.props.toggleName}
+                          <input type="checkbox" 
+                                class="move-over"
+                                onClick={() => this.props.whenClicked() }></input> 
+                          
+                          <select className="move-over">
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                            <option value="mercedes">Mercedes</option>
+                            <option value="audi">Audi</option>
+                          </select>
+                        </h3>
+                     </div>
                 </div>
             </div>
         );

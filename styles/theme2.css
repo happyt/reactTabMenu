@@ -16,6 +16,23 @@ a:link {
     background-color: dodgerBlue;
 }
 
+input[type=checkbox]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  padding: 10px;
+  padding-left: 1em;
+}
+
+
+.move-over {
+    margin-right: 2em;
+    margin-left: 3em;
+}
+
 .pure-button-success,
 .pure-button-error,
 .pure-button-warning,
