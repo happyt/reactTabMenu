@@ -8,13 +8,15 @@ import StrapBList from '../src/StrapBList.js';  // not working
 import Sliders from '../src/Sliders.js';
 import Buttons from '../src/Buttons.js';
 import Actions from '../src/Actions.js';
+import Theme from '../src/Theme.js';
+import Config from '../src/Config.js';
 
 class App extends React.Component {
     constructor() {
         super();
         this.state = {
             tabList: tabList,
-            currentTab : 1
+            currentTab : 8
         };
         this.changeTab = this.changeTab.bind(this);
     }
@@ -57,7 +59,9 @@ var tabList = [
     { 'id': 5, 'name': 'StrapLean', 'url': '/five' },
     { 'id': 6, 'name': 'Sliders', 'url': '/six' },
     { 'id': 7, 'name': 'Buttons', 'url': '/seven' },
-    { 'id': 8, 'name': 'Actions', 'url': '/eight' }
+    { 'id': 8, 'name': 'Actions', 'url': '/eight' },
+    { 'id': 9, 'name': 'Theme', 'url': '/nine' },
+    { 'id': 10, 'name': 'Config', 'url': '/ten' }
 ];
 
 var Tab = React.createClass({
@@ -160,6 +164,20 @@ var Content = React.createClass({
                 <div className="Eight">
                     <img width="40" src="images/image8.png" />
                     <Actions />
+                </div>
+                :null}
+
+                 {this.props.currentTab === 9 ?
+                <div className="Nine">
+                    <img width="36" src="images/image9.jpg" />
+                    <Theme />
+                </div>
+                :null}
+
+                 {this.props.currentTab === 10 ?
+                <div className="Ten">
+                    <img width="48" src="images/image10.jpg" />
+                    <Config />
                 </div>
                 :null}
 

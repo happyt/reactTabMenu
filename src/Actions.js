@@ -71,7 +71,8 @@ class Actions extends React.Component {
         }
         <Button  whenClicked={(e) => this.handleClick(e)}><Icon size="1.5rem" icon="alarm" />Action 1</Button>  
         <Button ref="abc" whenClicked={(e) => this.handleClick(e)}><Icon size="1.5rem" icon="language" />Action 2</Button>  
-        
+        <PanelCheck />
+
     </h4>
   }
 }
@@ -94,7 +95,26 @@ const InputBox = (props) => {
                 onChange = {props.update} />
         <h1>{props.displayText}</h1>
         </div>
-    )    
+    );    
+}
+
+class PanelCheck extends React.Component {
+    render() {
+        return (
+            <div>
+                <div className="mypanel-shell pure-u-1-3">
+                    <div className="mypanel-title">another title</div>                    
+                    <div>
+                    XXX
+                        <button className="pure-button pure-button-success"
+                        onClick={() => this.props.whenClicked() } >
+                        {this.props.children}
+                        </button>
+                    </div>
+                </div>
+            </div>
+        );
+    }
 }
 
 const Camera = () => <span className="fa fa-camera-retro"></span>

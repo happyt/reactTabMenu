@@ -24,14 +24,24 @@ class Panel extends React.Component {
   render() {
     return (
         <div >
-            <div style="background:#f7f8fa;display:flex; display: -webkit-box; display: -webkit-flex;margin:1px;">
-            <a>React Native</a></div>
-    
+            <div>
+                <a>Panel text</a>
+            </div>
         </div>
     );
   }
 }
 
+class Button extends React.Component {
+    render() {
+        return (
+            <button className="pure-button pure-button-success"
+               onClick={() => this.props.whenClicked() } >
+            {this.props.children}
+            </button>
+        );
+    }
+}
 
 const Camera = () => <span className="fa fa-camera-retro"></span>
 

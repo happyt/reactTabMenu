@@ -3,6 +3,9 @@
     src: url(../fonts/SF_Wonder_Comic.ttf);
 }
 
+body {
+    margin: 20px;
+}
 
 div {
     font-family: SF_Wonder_Comic;
@@ -69,4 +72,112 @@ a:link {
 .TodoListItem-complete {
     display: inline-block;
     margin-right: 20px;
+}
+
+.mypanel {
+    overflow:hidden;
+    padding: 0.5em;      /* Room for close button. */
+    padding-right: 40px; /* Room for Close button */
+    height: 100px;       /* For the close button */
+    color: #0e1320;
+
+    border-radius: 7px 7px 7px 7px;
+    border-color: #0102ff;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.mypanel-title {
+    border-radius: 7px 7px 0 0;
+    padding: 0.5em;
+    color: white;
+    background: linear-gradient(to bottom, rgba(73,155,234,1) 0%, rgba(32,87,145,1) 100%);
+    background-color: #b0bcdd;
+}
+
+.mypanel-body {
+    padding: 1.5em;
+    border-radius: 0 0 7px 7px;
+    background: -webkit-linear-gradient(rgba(218,228,237,1) 0%, rgba(104,154,204,1) 100%);
+    background: -o-linear-gradient(rgba(218,228,237,1) 0%, rgba(104,154,204,1) 100%);
+    background: linear-gradient(rgba(218,228,237,1) 0%, rgba(104,154,204,1) 100%);
+    background-color: #b0bcdd;
+}
+
+.pure-skin-mine .pure-table {
+/* Remove spacing between table cells (from Normalize.css) */
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+    border: 1px solid #fdf38c;
+}
+
+.pure-skin-mine .pure-table caption {
+    color: #5fadad;
+    font: italic 85%/1 arial, sans-serif;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.pure-skin-mine .pure-table td,
+.pure-skin-mine .pure-table th {
+    border-left: 1px solid #f3f38c;/* inner column border */
+    border-width: 0 0 0 1px;
+    font-size: inherit;
+    margin: 0;
+    overflow: visible; /*to make ths where the title is really long work*/
+    padding: 0.3em 0.6em; /* cell padding */
+}
+
+.pure-skin-mine .pure-table td:first-child,
+.pure-skin-mine .pure-table th:first-child {
+    border-left-width: 0;
+}
+
+.pure-skin-mine .pure-table thead {
+    background-color: #c3d009;
+    color: #081a54;
+    text-align: left;
+    vertical-align: bottom;
+}
+
+/*
+striping:
+even - #fff (white)
+odd - #f2f2f2 (light gray)
+*/
+.pure-skin-mine .pure-table td {
+    background-color: #ff0000;
+    color: #535309;
+}
+
+.pure-skin-mine .pure-table-odd td {
+    background-color: #f3f380;
+    color: #333305;
+}
+
+/* nth-child selector for modern browsers */
+.pure-skin-mine .pure-table-striped tr:nth-child(2n-1) td {
+    background-color: #f3f38c;
+    color: #333305;
+}
+
+/* BORDERED TABLES */
+.pure-skin-mine .pure-table-bordered td {
+    border-bottom: 1px solid #f3f38c;
+}
+
+.pure-skin-mine .pure-table-bordered tbody > tr:last-child td,
+.pure-skin-mine .pure-table-horizontal tbody > tr:last-child td {
+    border-bottom-width: 0;
+}
+
+/* HORIZONTAL BORDERED TABLES */
+.pure-skin-mine .pure-table-horizontal td,
+.pure-skin-mine .pure-table-horizontal th {
+    border-width: 0 0 1px 0;
+    border-bottom:1px solid #f3f38c;
+}
+.pure-skin-mine .pure-table-horizontal tbody > tr:last-child td {
+    border-bottom-width: 0;
 }
