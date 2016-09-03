@@ -18,6 +18,8 @@ class Actions extends React.Component {
 
     handleClick(e) {
         this.setState({badger: !this.state.badger});
+    //    console.log(e.value);
+        debugger;
    //     debugger;
    //     this.setState( {displayText : e.target.textContent} );
         switch( e.target.textContent) {
@@ -74,7 +76,8 @@ class Actions extends React.Component {
                 <Button ref="abc" whenClicked={(e) => this.handleClick(e)}><Icon size="1.5rem" icon="language" />Action 2</Button>  
             </div>
             <br />
-            <PanelCheck title="Try Me" toggleName="Toggle this "></PanelCheck>
+            <PanelCheck title="Try Me" toggleName="Toggle this "
+                     whenClicked={(e) => this.handleClick(e)}></PanelCheck>
             <br />
             <PanelCheckDrop title="Next option" dropTitle="Select value" toggleName="Toggle this "></PanelCheckDrop>
 
@@ -130,9 +133,9 @@ class PanelCheck extends React.Component {
                 <div className="mypanel-shell pure-u-1-3">
                     <div className="mypanel-title">{this.props.title}</div>                    
                     <div  className="mypanel-body">
-                        <h3>{this.props.toggleName}
+                        <h3>{this.props.toggleName} .
                        <input type="checkbox" name="vehicle" 
-                                onClick={() => this.props.whenClicked() }></input> 
+                                onClick={(e) => this.props.whenClicked(e) }></input> 
                         </h3>
                      </div>
                 </div>
@@ -142,13 +145,14 @@ class PanelCheck extends React.Component {
 }
 
 class PanelCheckDrop extends React.Component {
+
     render() {
         return (
             <div>
                 <div className="mypanel-shell pure-u-1-3">
                     <div className="mypanel-title">{this.props.title}</div>                    
                     <div  className="mypanel-body">
-                        <h3>{this.props.toggleName}
+                        <h3>{this.props.toggleName} :
                           <input type="checkbox" 
                                 class="move-over"
                                 onClick={() => this.props.whenClicked() }></input> 
