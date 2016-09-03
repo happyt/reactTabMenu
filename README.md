@@ -31,4 +31,6 @@ https://www.youtube.com/watch?v=xsSnOQynTHs
 - Add Theme page to test Pure css
 - Add Config page - nothing here yet
 - Make a fixed panel
-- Add a panel with checkbox
+- Add a panel with checkbox (Needs value hooked up)
+- Grad panel colours
+- Panel with checkbox and dropdown (needs initialise, hooking up)

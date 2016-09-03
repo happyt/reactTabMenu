@@ -3,7 +3,6 @@ import React from 'react';
 var Icon = React.createClass({
   propTypes: {
     icon: React.PropTypes.string.isRequired,
-    colour: React.PropTypes.string,
     size: React.PropTypes.oneOfType([
       React.PropTypes.string,
       React.PropTypes.number
@@ -12,7 +11,6 @@ var Icon = React.createClass({
   },
   getDefaultProps() {
     return {
-      colour: "#123456",
       size: 24
     };
   },
@@ -41,13 +39,13 @@ var Icon = React.createClass({
   },
   render() {
     let styles = {
-      fill: this.props.colour,
+      fill: "currentcolor",
       verticalAlign: "middle",
       width: this.props.size, // CSS instead of the width attr to support non-pixel units
       height: this.props.size // Prevents scaling issue in IE
     };
     return (
-      <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"
+      <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" fit
         style={this._mergeStyles(
           styles,
           this.props.style // This lets the parent pass custom styles
