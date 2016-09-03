@@ -11,17 +11,21 @@ class Actions extends React.Component {
             
         };
         this.update = this.update.bind(this);
+   //     this.handleCheck = this.handleCheck.bind(this);
         this.handleClick = this.handleClick.bind(this);
         this.sendCommand = this.sendCommand.bind(this);
         this.showResults = this.showResults.bind(this);
     }
 
+    handleCheck(e) {
+//        debugger;
+        console.log(e.state.badger);
+        this.setState({badger: e.state.badger});
+    }
+
     handleClick(e) {
         this.setState({badger: !this.state.badger});
-    //    console.log(e.value);
-        debugger;
-   //     debugger;
-   //     this.setState( {displayText : e.target.textContent} );
+
         switch( e.target.textContent) {
             case "Action 1":
                 this.sendCommand("http://jsonplaceholder.typicode.com/users?id=1");
@@ -76,8 +80,10 @@ class Actions extends React.Component {
                 <Button ref="abc" whenClicked={(e) => this.handleClick(e)}><Icon size="1.5rem" icon="language" />Action 2</Button>  
             </div>
             <br />
-            <PanelCheck title="Try Me" toggleName="Toggle this "
-                     whenClicked={(e) => this.handleClick(e)}></PanelCheck>
+            <PanelCheck title="Try Mex" toggleName="Toggle thiss "
+                     defaultChecked={true}
+                     
+                     whenClicked={(e) => this.handleCheck(this)}></PanelCheck>
             <br />
             <PanelCheckDrop title="Next option" dropTitle="Select value" toggleName="Toggle this "></PanelCheckDrop>
 
@@ -127,6 +133,12 @@ const PanelF = (props) => {
 //const PanelCheck = (props) => {
 
 class PanelCheck extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+            onOff: false            
+        };
+    }
     render() {
         return (
             <div>
@@ -135,6 +147,7 @@ class PanelCheck extends React.Component {
                     <div  className="mypanel-body">
                         <h3>{this.props.toggleName} .
                        <input type="checkbox" name="vehicle" 
+                                defaultChecked={this.props.defaultChecked}
                                 onClick={(e) => this.props.whenClicked(e) }></input> 
                         </h3>
                      </div>
@@ -155,7 +168,8 @@ class PanelCheckDrop extends React.Component {
                         <h3>{this.props.toggleName} :
                           <input type="checkbox" 
                                 class="move-over"
-                                onClick={() => this.props.whenClicked() }></input> 
+                                defaultChecked={this.props.defaultChecked}
+                                onClick={() => this.props.whenClicked(this.state.checked) }></input> 
                           
                           <select className="move-over">
                             <option value="volvo">Volvo</option>
