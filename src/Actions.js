@@ -1,6 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Icon from '../src/Icon.js';
+import PanelCheck from '../src/PanelCheck.js';
+import PanelCheckDrop from '../src/PanelCheckDrop.js';
+import FlatDropExample from '../src/FlatDropExample.js';
+import CheckboxInput from '../src/CheckboxInput.js';
 
 class Actions extends React.Component {
       constructor() {
@@ -65,11 +69,11 @@ class Actions extends React.Component {
     update (e) {
         this.setState( {displayText : e.target.value} );
     }
-  
+
   render() {
     return (
         <div>
-            <InputBox displayText={this.state.displayText} update={this.update} />
+           <InputBox displayText={this.state.displayText} update={this.update} />
             <div>
             {this.state.badger ?
                 <div>ON</div>
@@ -86,7 +90,10 @@ class Actions extends React.Component {
                      whenClicked={(e) => this.handleCheck(this)}></PanelCheck>
             <br />
             <PanelCheckDrop title="Next option" dropTitle="Select value" toggleName="Toggle this "></PanelCheckDrop>
+            <br />
+            <CheckboxInput label=" The label" name="The name" />
 
+            <FlatDropExample />
         </div>
     );
   }
@@ -130,61 +137,8 @@ const PanelF = (props) => {
     );    
 }
 
-//const PanelCheck = (props) => {
 
-class PanelCheck extends React.Component {
-    constructor() {
-        super();
-        this.state = {
-            onOff: false            
-        };
-    }
-    render() {
-        return (
-            <div>
-                <div className="mypanel-shell pure-u-1-3">
-                    <div className="mypanel-title">{this.props.title}</div>                    
-                    <div  className="mypanel-body">
-                        <h3>{this.props.toggleName} .
-                       <input type="checkbox" name="vehicle" 
-                                defaultChecked={this.props.defaultChecked}
-                                onClick={(e) => this.props.whenClicked(e) }></input> 
-                        </h3>
-                     </div>
-                </div>
-            </div>
-        );
-    }
-}
-
-class PanelCheckDrop extends React.Component {
-
-    render() {
-        return (
-            <div>
-                <div className="mypanel-shell pure-u-1-3">
-                    <div className="mypanel-title">{this.props.title}</div>                    
-                    <div  className="mypanel-body">
-                        <h3>{this.props.toggleName} :
-                          <input type="checkbox" 
-                                class="move-over"
-                                defaultChecked={this.props.defaultChecked}
-                                onClick={() => this.props.whenClicked(this.state.checked) }></input> 
-                          
-                          <select className="move-over">
-                            <option value="volvo">Volvo</option>
-                            <option value="saab">Saab</option>
-                            <option value="mercedes">Mercedes</option>
-                            <option value="audi">Audi</option>
-                          </select>
-                        </h3>
-                     </div>
-                </div>
-            </div>
-        );
-    }
-}
-
+            
 const Camera = () => <span className="fa fa-camera-retro"></span>
 
 module.exports = Actions;
