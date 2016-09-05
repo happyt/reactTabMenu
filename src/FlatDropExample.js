@@ -9,7 +9,7 @@ class FlatDropExample extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      selected: options[0]
+      selected: options[2]
     }
     this._onSelect = this._onSelect.bind(this)
   }
@@ -26,7 +26,7 @@ class FlatDropExample extends Component {
     return (
       <section>
         <h4>Flat Array Example </h4>
-        <Dropdown options={options} onChange={this._onSelect} value={defaultOption} placeholder="Select an option" />
+        <Dropdown options={options} onChange={this._onSelect} value={defaultOption} placeholder="Select an option" baseClassName="Dropdown" />
         <div className='result'>
           You selected
           <strong> {placeHolderValue} </strong>

@@ -9,10 +9,25 @@ class Theme extends React.Component {
         };
     }
 
+    colourFunction() {
+        var myselect = document.getElementById("select1"),
+        colour = myselect.options[myselect.selectedIndex].className;
+        myselect.className = colour;
+        myselect.blur(); //This just unselects the select list without having to click
+    }
+
   render() {
     return (
         <div>
             <h2>Example Theme</h2>
+
+            <select id="select1" onchange="colourFunction()">
+                <option className="US-red" value="A">Level</option>
+                <option className="US-white" value="B">Home</option>
+                <option className="US-blue" value="C">Away</option>
+                <option className="US-white" value="C">Unplayed</option>
+            </select>
+             <br />
             <div>
                 <a className="pure-button pure-button-active" href="#">Link Button</a>
                 <button className="pure-button pure-button-active">Pure Button</button>

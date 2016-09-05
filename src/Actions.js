@@ -5,6 +5,7 @@ import PanelCheck from '../src/PanelCheck.js';
 import PanelCheckDrop from '../src/PanelCheckDrop.js';
 import FlatDropExample from '../src/FlatDropExample.js';
 import CheckboxInput from '../src/CheckboxInput.js';
+import DropdownColours from '../src/DropdownColours.js';
 
 class Actions extends React.Component {
       constructor() {
@@ -20,6 +21,8 @@ class Actions extends React.Component {
         this.sendCommand = this.sendCommand.bind(this);
         this.showResults = this.showResults.bind(this);
     }
+
+
 
     handleCheck(e) {
 //        debugger;
@@ -94,6 +97,8 @@ class Actions extends React.Component {
             <CheckboxInput label=" The label" name="The name" />
 
             <FlatDropExample />
+
+            <DropdownColours list={colours} selected={colours[0]} />
         </div>
     );
   }
@@ -137,7 +142,16 @@ const PanelF = (props) => {
     );    
 }
 
-
+const colours = [{
+    name: "Red",
+    hex: "#F21B1B"
+}, {
+    name: "Blue",
+    hex: "#1B66F2"
+}, {
+    name: "Green",
+    hex: "#07BA16"
+}];
             
 const Camera = () => <span className="fa fa-camera-retro"></span>
 
