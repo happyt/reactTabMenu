@@ -13,6 +13,7 @@ var Icon = React.createClass({
   },
   getDefaultProps() {
     return {
+      colour: "#123456",
       size: 24
     };
   },
@@ -41,7 +42,7 @@ var Icon = React.createClass({
   },
   render() {
     let styles = {
-      fill: "currentcolor",
+      fill: this.props.colour,
       verticalAlign: "middle",
       width: this.props.size, // CSS instead of the width attr to support non-pixel units
       height: this.props.size // Prevents scaling issue in IE

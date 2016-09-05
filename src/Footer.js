@@ -8,7 +8,15 @@ class Footer extends React.Component {
     return <h4>
             <Icon size="2rem" icon="alarm" />
             ...the bottom line...
-            <Icon size="2rem" icon="language" />
+            <Icon colour="red" size="1.5rem" icon="language" />
+             <div>
+                 <span className="fa fa-camera-retro"></span> font-awesome
+             </div>
+             <div>
+                 <span className="icon-home">  </span>
+                 <span className="icon-folder-upload"> </span>
+                 <span> icomoon icons</span>
+             </div>
           </h4>
   }
 }
