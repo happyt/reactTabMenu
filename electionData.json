@@ -1,0 +1,577 @@
+[
+    {
+        id: 1,
+        name: "Alabama",
+        shortCode: "AL",
+        president: {
+            status: "REPUBLICAN_WIN",
+            winners: [
+                {
+                    id: 1,
+                    name: "Donald Trump",
+                    votes: {
+                        PRESIDENT_ELECTORAL: 9
+                    }
+                }
+            ],
+            stationsDeclared: [
+                "CBS",
+                "CNN",
+                "ABC"
+            ]
+        },
+        status: "REPUBLICAN_WIN"
+    },
+    {
+        id: 2,
+        name: "Alaska",
+        shortCode: "AK",
+        president: {
+            status: "UNDECLARED",
+            winners: null,
+            stationsDeclared: [
+                "ABC"
+            ]
+        },
+        status: "UNDECLARED"
+    },
+    {
+        id: 3,
+        name: "Arizona",
+        shortCode: "AS",
+        president: {
+            status: "UNDECLARED",
+            winners: null,
+            stationsDeclared: []
+        },
+        status: "UNDECLARED"
+    },
+    {
+        id: 4,
+        name: "Arkansas",
+        shortCode: "AZ",
+        president: {
+            status: "UNDECLARED",
+            winners: null,
+            stationsDeclared: []
+        },
+        status: "UNDECLARED"
+    },
+    {
+        id: 5,
+        name: "California",
+        shortCode: "AR",
+        president: {
+            status: "UNDECLARED",
+            winners: null,
+            stationsDeclared: []
+        },
+        status: "UNDECLARED"
+    },
+    {
+        id: 6,
+        name: "Colorado",
+        shortCode: "CA",
+        president: {
+            status: "UNDECLARED",
+            winners: null,
+            stationsDeclared: []
+        },
+        status: "UNDECLARED"
+    },
+    {
+        id: 7,
+        name: "Connecticut",
+        shortCode: "CO",
+        president: {
+            status: "UNDECLARED",
+            winners: null,
+            stationsDeclared: []
+        },
+        status: "UNDECLARED"
+    },
+    {
+        id: 8,
+        name: "Delaware",
+        shortCode: "CT",
+        president: {
+            status: "UNDECLARED",
+            winners: null,
+            stationsDeclared: []
+        },
+        status: "UNDECLARED"
+    },
+    {
+        id: 9,
+        name: "District of Columbia",
+        shortCode: "DC",
+        president: {
+            status: "UNDECLARED",
+            winners: null,
+            stationsDeclared: []
+        },
+        status: "UNDECLARED"
+    },
+    {
+        id: 10,
+        name: "Florida",
+        shortCode: "FL",
+        president: {
+            status: "UNDECLARED",
+            winners: null,
+            stationsDeclared: []
+        },
+        status: "UNDECLARED"
+    },
+    {
+        id: 11,
+        name: "Georgia",
+        shortCode: "GA",
+        president: {
+            status: "UNDECLARED",
+            winners: null,
+            stationsDeclared: []
+        },
+        status: "UNDECLARED"
+    },
+    {
+        id: 12,
+        name: "Hawaii",
+        shortCode: "HI",
+        president: {
+            status: "UNDECLARED",
+            winners: null,
+            stationsDeclared: []
+        },
+        status: "UNDECLARED"
+    },
+    {
+        id: 13,
+        name: "Idaho",
+        shortCode: "ID",
+        president: {
+            status: "UNDECLARED",
+            winners: null,
+            stationsDeclared: []
+        },
+        status: "UNDECLARED"
+    },
+    {
+        id: 14,
+        name: "Illinois",
+        shortCode: "IL",
+        president: {
+            status: "UNDECLARED",
+            winners: null,
+            stationsDeclared: []
+        },
+        status: "UNDECLARED"
+    },
+    {
+        id: 15,
+        name: "Indiana",
+        shortCode: "IN",
+        president: {
+            status: "UNDECLARED",
+            winners: null,
+            stationsDeclared: []
+        },
+        status: "UNDECLARED"
+    },
+    {
+        id: 16,
+        name: "Iowa",
+        shortCode: "IA",
+        president: {
+            status: "UNDECLARED",
+            winners: null,
+            stationsDeclared: []
+        },
+        status: "UNDECLARED"
+    },
+    {
+        id: 17,
+        name: "Kansas",
+        shortCode: "KS",
+        president: {
+            status: "UNDECLARED",
+            winners: null,
+            stationsDeclared: []
+        },
+        status: "UNDECLARED"
+    },
+    {
+        id: 18,
+        name: "Kentucky",
+        shortCode: "KY",
+        president: {
+            status: "UNDECLARED",
+            winners: null,
+            stationsDeclared: []
+        },
+        status: "UNDECLARED"
+    },
+    {
+        id: 19,
+        name: "Louisiana",
+        shortCode: "LA",
+        president: {
+            status: "UNDECLARED",
+            winners: null,
+            stationsDeclared: []
+        },
+        status: "UNDECLARED"
+    },
+    {
+        id: 20,
+        name: "Maine",
+        shortCode: "ME",
+        president: {
+            status: "UNDECLARED",
+            winners: null,
+            stationsDeclared: []
+        },
+        status: "UNDECLARED"
+    },
+    {
+        id: 21,
+        name: "Maryland",
+        shortCode: "MD",
+        president: {
+            status: "UNDECLARED",
+            winners: null,
+            stationsDeclared: []
+        },
+        status: "UNDECLARED"
+    },
+    {
+        id: 22,
+        name: "Massachusetts",
+        shortCode: "MA",
+        president: {
+            status: "UNDECLARED",
+            winners: null,
+            stationsDeclared: []
+        },
+        status: "UNDECLARED"
+    },
+    {
+        id: 23,
+        name: "Michigan",
+        shortCode: "MI",
+        president: {
+            status: "UNDECLARED",
+            winners: null,
+            stationsDeclared: []
+        },
+        status: "UNDECLARED"
+    },
+    {
+        id: 24,
+        name: "Minnesota",
+        shortCode: "MN",
+        president: {
+            status: "UNDECLARED",
+            winners: null,
+            stationsDeclared: []
+        },
+        status: "UNDECLARED"
+    },
+    {
+        id: 25,
+        name: "Mississippi",
+        shortCode: "MS",
+        president: {
+            status: "UNDECLARED",
+            winners: null,
+            stationsDeclared: []
+        },
+        status: "UNDECLARED"
+    },
+    {
+        id: 26,
+        name: "Missouri",
+        shortCode: "MO",
+        president: {
+            status: "UNDECLARED",
+            winners: null,
+            stationsDeclared: []
+        },
+        status: "UNDECLARED"
+    },
+    {
+        id: 27,
+        name: "Montana",
+        shortCode: "MT",
+        president: {
+            status: "UNDECLARED",
+            winners: null,
+            stationsDeclared: []
+        },
+        status: "UNDECLARED"
+    },
+    {
+        id: 28,
+        name: "Nebraska",
+        shortCode: "NE",
+        president: {
+            status: "UNDECLARED",
+            winners: null,
+            stationsDeclared: []
+        },
+        status: "UNDECLARED"
+    },
+    {
+        id: 29,
+        name: "Nevada",
+        shortCode: "NV",
+        president: {
+            status: "UNDECLARED",
+            winners: null,
+            stationsDeclared: []
+        },
+        status: "UNDECLARED"
+    },
+    {
+        id: 30,
+        name: "New Hampshire",
+        shortCode: "NH",
+        president: {
+            status: "UNDECLARED",
+            winners: null,
+            stationsDeclared: []
+        },
+        status: "UNDECLARED"
+    },
+    {
+        id: 31,
+        name: "New Jersey",
+        shortCode: "NJ",
+        president: {
+            status: "UNDECLARED",
+            winners: null,
+            stationsDeclared: []
+        },
+        status: "UNDECLARED"
+    },
+    {
+        id: 32,
+        name: "New Mexico",
+        shortCode: "NM",
+        president: {
+            status: "UNDECLARED",
+            winners: null,
+            stationsDeclared: []
+        },
+        status: "UNDECLARED"
+    },
+    {
+        id: 33,
+        name: "New York",
+        shortCode: "NY",
+        president: {
+            status: "UNDECLARED",
+            winners: null,
+            stationsDeclared: []
+        },
+        status: "UNDECLARED"
+    },
+    {
+        id: 34,
+        name: "North Carolina",
+        shortCode: "NC",
+        president: {
+            status: "UNDECLARED",
+            winners: null,
+            stationsDeclared: []
+        },
+        status: "UNDECLARED"
+    },
+    {
+        id: 35,
+        name: "North Dakota",
+        shortCode: "ND",
+        president: {
+            status: "UNDECLARED",
+            winners: null,
+            stationsDeclared: []
+        },
+        status: "UNDECLARED"
+    },
+    {
+        id: 36,
+        name: "Ohio",
+        shortCode: "OH",
+        president: {
+            status: "UNDECLARED",
+            winners: null,
+            stationsDeclared: []
+        },
+        status: "UNDECLARED"
+    },
+    {
+        id: 37,
+        name: "Oklahoma",
+        shortCode: "OK",
+        president: {
+            status: "UNDECLARED",
+            winners: null,
+            stationsDeclared: []
+        },
+        status: "UNDECLARED"
+    },
+    {
+        id: 38,
+        name: "Oregon",
+        shortCode: "OR",
+        president: {
+            status: "UNDECLARED",
+            winners: null,
+            stationsDeclared: []
+        },
+        status: "UNDECLARED"
+    },
+    {
+        id: 39,
+        name: "Pennsylvania",
+        shortCode: "PA",
+        president: {
+            status: "UNDECLARED",
+            winners: null,
+            stationsDeclared: []
+        },
+        status: "UNDECLARED"
+    },
+    {
+        id: 40,
+        name: "Rhode Island",
+        shortCode: "RI",
+        president: {
+            status: "UNDECLARED",
+            winners: null,
+            stationsDeclared: []
+        },
+        status: "UNDECLARED"
+    },
+    {
+        id: 41,
+        name: "South Carolina",
+        shortCode: "SC",
+        president: {
+            status: "UNDECLARED",
+            winners: null,
+            stationsDeclared: []
+        },
+        status: "UNDECLARED"
+    },
+    {
+        id: 42,
+        name: "South Dakota",
+        shortCode: "SD",
+        president: {
+            status: "UNDECLARED",
+            winners: null,
+            stationsDeclared: []
+        },
+        status: "UNDECLARED"
+    },
+    {
+        id: 43,
+        name: "Tennessee",
+        shortCode: "TN",
+        president: {
+            status: "UNDECLARED",
+            winners: null,
+            stationsDeclared: []
+        },
+        status: "UNDECLARED"
+    },
+    {
+        id: 44,
+        name: "Texas",
+        shortCode: "TX",
+        president: {
+            status: "UNDECLARED",
+            winners: null,
+            stationsDeclared: []
+        },
+        status: "UNDECLARED"
+    },
+    {
+        id: 45,
+        name: "Utah",
+        shortCode: "UT",
+        president: {
+            status: "UNDECLARED",
+            winners: null,
+            stationsDeclared: []
+        },
+        status: "UNDECLARED"
+    },
+    {
+        id: 46,
+        name: "Vermont",
+        shortCode: "VT",
+        president: {
+            status: "UNDECLARED",
+            winners: null,
+            stationsDeclared: []
+        },
+        status: "UNDECLARED"
+    },
+    {
+        id: 47,
+        name: "Virginia",
+        shortCode: "VA",
+        president: {
+            status: "UNDECLARED",
+            winners: null,
+            stationsDeclared: []
+        },
+        status: "UNDECLARED"
+    },
+    {
+        id: 48,
+        name: "Washington",
+        shortCode: "WA",
+        president: {
+            status: "UNDECLARED",
+            winners: null,
+            stationsDeclared: []
+        },
+        status: "UNDECLARED"
+    },
+    {
+        id: 49,
+        name: "West Virginia",
+        shortCode: "WV",
+        president: {
+            status: "UNDECLARED",
+            winners: null,
+            stationsDeclared: []
+        },
+        status: "UNDECLARED"
+    },
+    {
+        id: 50,
+        name: "Wisconsin",
+        shortCode: "WI",
+        president: {
+            status: "UNDECLARED",
+            winners: null,
+            stationsDeclared: []
+        },
+        status: "UNDECLARED"
+    },
+    {
+        id: 51,
+        name: "Wyoming",
+        shortCode: "WY",
+        president: {
+            status: "UNDECLARED",
+            winners: null,
+            stationsDeclared: []
+        },
+        status: "UNDECLARED"
+    }
+]
