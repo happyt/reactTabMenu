@@ -36,7 +36,8 @@ input[type=checkbox]
 .pure-button-success,
 .pure-button-error,
 .pure-button-warning,
-.pure-button-secondary {
+.pure-button-secondary,
+.pure-button-tertiary {
     color: black;
     border-radius: 4px;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
@@ -55,6 +56,9 @@ input[type=checkbox]
 .pure-button-secondary {
     background: rgb(175,238,238); /* this is a pale turquoise */
 }
+.pure-button-tertiary {
+    background: rgb(175,238,238); /* this is a pale turquoise */
+}
 .pure-menu-link {
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -69,6 +73,15 @@ input[type=checkbox]
 .pure-menu-selected .pure-menu-link {
     background-color: white;
     color: dodgerBlue;            
+}
+
+.bordered {
+    border:1px solid black;
+    border-radius: 4px;
+}
+
+.alignright {
+    float: right;
 }
 
 .ToDo-App {
@@ -313,26 +326,62 @@ odd - #f2f2f2 (light gray)
     background: dodgerBlue;
 }
 
-div.dropdown-container >div.dropdown-display {
+/* main text colour */
+
+span {
+  color: #ffffff;
+}
+span > b {
+  color: black;
+}
+#selected {
+  width: 100%;
+  margin-top: 20px;
+}
+.border-box {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.Dropdown {
+  float: left;
+  display: block;
+  width: 250px;
+}
+.Dropdown > div {
+  float: left;
+  width: 100%;
+}
+.Dropdown > div > div.dropdown-display {
   float: left;
   width: 100%;
   background: white;
-  height: 40px;
+  height: 32px;
   cursor: pointer;
   border: solid 1px #DDD;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
-div.dropdown-container >div.dropdown-display >* {
+.Dropdown > div > div.dropdown-display > * {
   float: left;
   height: 100%;
+  height: 32px;
+  line-height: 32px !important;
+  display: inline-block;
+  vertical-align: middle;
 }
-div.dropdown-container >div.dropdown-display >span {
-  font-size: 14px;
+.Dropdown > div > div.dropdown-display > span {
+  font-size: 20px;
   width: 100%;
   position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
   padding-right: 34px;
   padding-left: 10px;
 }
-div.dropdown-container >div.dropdown-display >i {
+.Dropdown > div > div.dropdown-display > span.placeholder {
+  color: #AAA;
+}
+.Dropdown > div > div.dropdown-display > i {
   position: relative;
   width: 14px;
   margin-left: -24px;
@@ -341,34 +390,78 @@ div.dropdown-container >div.dropdown-display >i {
   padding-right: 10px;
   text-align: right;
 }
-div.dropdown-container >div.dropdown-list {
+.Dropdown > div > div.dropdown-list {
   float: left;
-  width: 100%;
   position: relative;
+  width: 100%;
+  transform: scale(1, 0);
+  -ms-transform: scale(1, 0);
+  -webkit-transform: scale(1, 0);
+  -o-transform: scale(1, 0);
+  -moz-transform: scale(1, 0);
+  -webkit-transition: -webkit-transform ease 250ms;
+  -moz-transition: -webkit-transform ease 250ms;
+  -ms-transition: -webkit-transform ease 250ms;
+  -o-transition: -webkit-transform ease 250ms;
+  transition: -webkit-transform ease 250ms;
+  -webkit-transition: transform ease 250ms;
+  -moz-transition: transform ease 250ms;
+  -ms-transition: transform ease 250ms;
+  -o-transition: transform ease 250ms;
+  transition: transform ease 250ms;
 }
-div.dropdown-container >div.dropdown-list >div {
+.Dropdown > div > div.dropdown-list > div {
   position: absolute;
   width: 100%;
   z-index: 2;
   cursor: pointer;
   background: white;
 }
-div.dropdown-container >div.dropdown-list >div >div {
+.Dropdown > div > div.dropdown-list > div > div {
   float: left;
   width: 100%;
   padding: 0 10px;
   font-size: 14px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
   border: solid 1px #DDD;
   border-top: none;
 }
-div.dropdown-container >div.dropdown-list >div >div:hover {
+.Dropdown > div > div.dropdown-list > div > div:hover {
   background: #F0F0F0;
 }
-div.dropdown-container >div.dropdown-list >div >div.selected {
+.Dropdown > div > div.dropdown-list > div > div.selected {
   background: #2875C7;
   color: white;
 }
-div.dropdown-container >div.dropdown-list >div >div >span {
+.Dropdown > div > div.dropdown-list > div > div > * {
+  height: 32px;
+  line-height: 40px !important;
+  display: inline-block;
+  vertical-align: middle;
+}
+.Dropdown > div > div.dropdown-list > div > div > span {
   float: left;
   width: 100%;
+  position: relative;
+  padding-right: 30px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  color: inherit;
+}
+.Dropdown > div > div.dropdown-list > div > div > i {
+  float: left;
+  width: 20px;
+  margin-left: -20px;
+  display: none;
+}
+.Dropdown > div > div.dropdown-list > div > div.selected > i {
+  display: inline-block;
+}
+.Dropdown > div.show > div.dropdown-list {
+  transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
 }

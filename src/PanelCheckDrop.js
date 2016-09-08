@@ -10,7 +10,7 @@ class PanelCheckDrop extends React.Component {
                     <div  className="mypanel-body">
                         <h3>{this.props.toggleName} :
                           <input type="checkbox" 
-                                class="move-over"
+                                className="move-over"
                                 defaultChecked={this.props.defaultChecked}
                                 onClick={() => this.props.whenClicked(this.state.checked) }></input> 
                           

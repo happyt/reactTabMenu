@@ -5,7 +5,7 @@ import PanelCheck from '../src/PanelCheck.js';
 import PanelCheckDrop from '../src/PanelCheckDrop.js';
 import FlatDropExample from '../src/FlatDropExample.js';
 import CheckboxInput from '../src/CheckboxInput.js';
-import DropdownColours from '../src/DropdownColours.js';
+import Dropdown from '../src/Dropdown.js';
 
 class Actions extends React.Component {
       constructor() {
@@ -21,8 +21,6 @@ class Actions extends React.Component {
         this.sendCommand = this.sendCommand.bind(this);
         this.showResults = this.showResults.bind(this);
     }
-
-
 
     handleCheck(e) {
 //        debugger;
@@ -96,9 +94,10 @@ class Actions extends React.Component {
             <br />
             <CheckboxInput label=" The label" name="The name" />
 
-            <FlatDropExample />
+            <FlatDropExample  />
 
-            <DropdownColours list={colours} selected={colours[0]} />
+            <Dropdown list={colours} selected={colours[0]} />
+            <br />
         </div>
     );
   }

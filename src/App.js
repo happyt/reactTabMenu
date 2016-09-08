@@ -16,7 +16,7 @@ class App extends React.Component {
         super();
         this.state = {
             tabList: tabList,
-            currentTab : 8
+            currentTab : 7
         };
         this.changeTab = this.changeTab.bind(this);
     }

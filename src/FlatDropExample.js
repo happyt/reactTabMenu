@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Dropdown from './Dropdown.js'
+import Dropdown1 from './Dropdown1.js'
 
 const options = [
   'one', 'two', 'three'
@@ -26,7 +26,7 @@ class FlatDropExample extends Component {
     return (
       <section>
         <h4>Flat Array Example </h4>
-        <Dropdown options={options} onChange={this._onSelect} value={defaultOption} placeholder="Select an option" baseClassName="Dropdown" />
+        <Dropdown1 options={options} onChange={this._onSelect} value={defaultOption} placeholder="Select an option" baseClassName="Dropdown" />
         <div className='result'>
           You selected
           <strong> {placeHolderValue} </strong>

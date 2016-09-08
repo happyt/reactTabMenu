@@ -56,7 +56,7 @@ var Icon = React.createClass({
       height: this.props.size // Prevents scaling issue in IE
     };
     return (
-      <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" fit
+      <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"
         style={this._mergeStyles(
           styles,
           this.props.style // This lets the parent pass custom styles

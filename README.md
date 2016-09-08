@@ -11,7 +11,7 @@ npm install --save-dev babel-preset-stage-2
 look at: dan abramov  hot reloading
 https://www.youtube.com/watch?v=xsSnOQynTHs
 
-
+useful page - https://toddmotto.com/react-create-class-versus-component/
 
 - Initially just adding some tabs
 - Added sliders
