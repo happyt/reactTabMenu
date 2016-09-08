@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Icon from '../src/Icon.js';
-
+import PartyIcon from '../src/PartyIcon.js';
             
 class Buttons extends React.Component {
       constructor() {
@@ -42,6 +42,11 @@ class Buttons extends React.Component {
             <ListLine linetext="The quick brown fox jumped over the lazy dog"/>
             <ListLine />        
         </div>
+
+        <PartyIcon kind="donkey-democrat" />
+        <PartyIcon kind="elephant-republican" size="48" />
+        <PartyIcon kind="republican" />
+        <PartyIcon kind="democrat" />
     </h4>
   }
 }
