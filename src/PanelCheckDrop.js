@@ -28,7 +28,6 @@ class PanelCheckDrop extends React.Component {
     }
 }
 
-
 module.exports = PanelCheckDrop;
     // {this.props.items.map(function(item, i) {
     //                <div onClick={handleClick.bind(this, i, props)} key={i}>{item}</div>
