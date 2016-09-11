@@ -34,3 +34,6 @@ useful page - https://toddmotto.com/react-create-class-versus-component/
 - Add a panel with checkbox (Needs value hooked up)
 - Grad panel colours
 - Panel with checkbox and dropdown (needs initialise, hooking up)
+- Dropdown with colours
+- PartyIcons with svg icons for the US Election (change 'kind' to 'icon')
+- 

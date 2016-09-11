@@ -45,8 +45,13 @@ class Buttons extends React.Component {
 
         <PartyIcon kind="donkey-democrat" />
         <PartyIcon kind="elephant-republican" size="48" />
-        <PartyIcon kind="republican" />
+        <PartyIcon kind="republican" colorA="#88aa88" colorB="#ff00ff"/>
         <PartyIcon kind="democrat" />
+        <PartyIcon kind="donkey" size="128" colorC="#00ff00"/>
+        <PartyIcon kind="donkey" />
+        <Button  whenClicked={(e) => this.handleClick(e)}><div><PartyIcon kind="cross" /></div></Button>  
+        <Button  whenClicked={(e) => this.handleClick(e)}><div><PartyIcon kind="play" colorA="#0aaa00" /></div></Button>  
+
     </h4>
   }
 }
@@ -58,11 +63,11 @@ class ListLine extends React.Component {
     render() {
         return (
         <div className="bordered">
-            <ButtonPlay><Icon size="1.6rem" icon="shop" /></ButtonPlay>
+            <ButtonPlay><PartyIcon size="1.6rem" colorA="#0aaaf0" kind="play" /></ButtonPlay>
             {this.props.linetext}
             <div className="alignright">
-                <ButtonDelete><Icon size="1.6rem" icon="highlight-remove" /></ButtonDelete>
-                <ButtonParty>OUT</ButtonParty>
+                <ButtonDelete><PartyIcon size="1.6rem" kind="cross" colorA="#fff" /></ButtonDelete>
+                <ButtonParty><PartyIcon size="1.6rem" kind="republican" /></ButtonParty>
             </div>
         </div>
         );
@@ -86,7 +91,7 @@ class ButtonSimple extends React.Component {
 class ButtonPlay extends React.Component {
     render() {
         return (
-            <button className="pure-button pure-button-secondary">
+            <button className="pure-button pure-button-success">
             {this.props.children}
             </button>
         );
