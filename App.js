@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import socket from 'socket'
 
 class App extends React.Component {
     constructor() {
