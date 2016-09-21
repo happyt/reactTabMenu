@@ -2,6 +2,13 @@
 
 This is just a small project to play around with React.
 
+npm init
+look at 
+https://webpack.github.io/docs/tutorials/getting-started/#first-loader
+
+npm install webpack -g
+check with ( use ./ for both files) webpack ./entry.js ./bundle.js 
+
 npm install react react-dom --save
 npm install babel-loader babel-core babel-preset-es2015 babel-preset-react --save
 
@@ -18,7 +25,7 @@ useful page - https://toddmotto.com/react-create-class-versus-component/
 - Haven't used Bootstrap, using the Pure css library
 - Over-ride some of the colours
 - Tried a few icon font methods
-    - boostrap (took this out - too big)
+    - bootstrap (took this out - too big)
     - icomoon
     - https://dmfrancisco.github.io/react-icons/
     - fontawesome
