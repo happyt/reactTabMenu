@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import Icon from '../src/Icon.js';
 import PartyIcon from '../src/PartyIcon.js';
             
-class Buttons extends React.Component {
+class ListLines extends React.Component {
       constructor() {
         super();
         this.state = {
@@ -49,7 +49,7 @@ class Buttons extends React.Component {
         <PartyIcon kind="democrat" />
         <PartyIcon kind="donkey" size="128" colorC="#00ff00"/>
         <PartyIcon kind="donkey" />
-        <Button  whenClicked={(e) => this.handleClick(e)}><div><PartyIcon kind="cross" /></div></Button>  
+        <Button  whenClicked={(e) => this.handleClick(e)}><div><PartyIcon kind="plus" /></div></Button>  
         <Button  whenClicked={(e) => this.handleClick(e)}><div><PartyIcon kind="play" colorA="#0aaa00" /></div></Button>  
 
     </h4>
@@ -63,7 +63,7 @@ class ListLine extends React.Component {
     render() {
         return (
         <div className="bordered">
-            <ButtonPlay><PartyIcon size="1.6rem" colorA="#0aaaf0" kind="play" /></ButtonPlay>
+            <ButtonPlay><PartyIcon size="1.6rem" colorA="#ffffff" kind="play" /></ButtonPlay>
             {this.props.linetext}
             <div className="alignright">
                 <ButtonDelete><PartyIcon size="1.6rem" kind="cross" colorA="#fff" /></ButtonDelete>
@@ -143,4 +143,4 @@ const InputBox = (props) => {
 
 const Camera = () => <span className="fa fa-camera-retro"></span>
 
-module.exports = Buttons;
+module.exports = ListLines;

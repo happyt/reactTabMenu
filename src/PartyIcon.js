@@ -8,6 +8,7 @@ const iconList = [
   'democrat',
   'donkey',
   'cross',
+  'plus',
   'play'
 ]
 
@@ -82,6 +83,10 @@ export default class PartyIcon extends Component {
 
             case ('cross'): return (<svg xmlns="http://www.w3.org/2000/svg" width="125.655" height="125.655" fill={colorB} height={height || size} width={width || size} viewBox="0 0 200 200">            
            <path fill={this.props.colorA} d="M0 30 L30 0 100 70 170 0 200 30 130 100 200 170 170 200 100 130 30 200 0 170 70 100z"/>
+          </svg>);
+
+            case ('plus'): return (<svg xmlns="http://www.w3.org/2000/svg" width="125.655" height="125.655" fill={colorB} height={height || size} width={width || size} viewBox="0 0 200 200">            
+           <path fill={this.props.colorA} d="M70 0 L130 0 130 70 200 70 200 130 130 130 130 200 70 200 70 130 0 130 0 70 70 70z"/>
           </svg>);
 
             case ('play'): return (<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill={colorB} height={height || size} width={width || size} viewBox="0 0 200 200">            

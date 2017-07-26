@@ -6,7 +6,7 @@ import ToDoApp from '../src/ToDoApp.js';
 import StrapAList from '../src/StrapAList.js';
 import StrapBList from '../src/StrapBList.js';  // not working
 import Sliders from '../src/Sliders.js';
-import Buttons from '../src/Buttons.js';
+import ListLines from '../src/ListLines.js';
 import Actions from '../src/Actions.js';
 import Theme from '../src/Theme.js';
 import Config from '../src/Config.js';
@@ -58,7 +58,7 @@ var tabList = [
     { 'id': 4, 'name': 'StrapA', 'url': '/four' },
     { 'id': 5, 'name': 'StrapLean', 'url': '/five' },
     { 'id': 6, 'name': 'Sliders', 'url': '/six' },
-    { 'id': 7, 'name': 'Buttons', 'url': '/seven' },
+    { 'id': 7, 'name': 'ListLines', 'url': '/seven' },
     { 'id': 8, 'name': 'Actions', 'url': '/eight' },
     { 'id': 9, 'name': 'Theme', 'url': '/nine' },
     { 'id': 10, 'name': 'Config', 'url': '/ten' }
@@ -156,7 +156,7 @@ var Content = React.createClass({
                  {this.props.currentTab === 7 ?
                 <div className="Seven">
                     <img width="40" src="images/image7.png" />
-                    <Buttons />
+                    <ListLines />
                 </div>
                 :null}
 

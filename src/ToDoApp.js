@@ -9,7 +9,7 @@ var ToDoList = React.createClass({
           { item.text }, {item.trip}
           <span onClick={ _this.props.removeItem.bind(null, item['.key']) }
                 style={{ color: 'red', marginLeft: '10px', cursor: 'pointer' }}>
-            X
+            DEL
           </span>
         </li>
       );
